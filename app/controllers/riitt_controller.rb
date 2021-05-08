@@ -1,0 +1,2 @@
+class RiittController < ApplicationController
+end
