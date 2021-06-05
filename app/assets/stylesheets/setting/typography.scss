@@ -1,0 +1,49 @@
+// ================================
+// フォントサイズ
+// ================================
+$font-size-base: 1.6rem;
+$font-weight-base: 500;
+$line-height-base: 1.6;
+// ================================
+// 字間
+// ================================
+$letter-spacing-base: 0.08em;
+// ================================
+// フォント
+// ================================
+
+$font-family-awesome: "Font Awesome 5 Free";
+
+$font-family-code: monospace;
+
+$font-family-base: honoka-maru,
+dnp-shuei-gothic-gin-std,
+YuGothic,
+"游ゴシック体",
+"Yu Gothic Medium",
+"游ゴシック Medium",
+"Yu Gothic",
+"游ゴシック",
+"ヒラギノ角ゴ ProN",
+"Hiragino Kaku Gothic ProN",
+"メイリオ",
+Meiryo,
+"ＭＳ Ｐゴシック",
+"MS PGothic",
+Arial,
+Helvetica,
+Verdana,
+sans-serif;
+
+
+// ================================
+// ローカルフォント
+// ================================
+
+@font-face {
+  font-family: 'honoka-maru';
+  src: font-url('honoka-maru.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

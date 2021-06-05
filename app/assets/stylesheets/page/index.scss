@@ -1,0 +1,108 @@
+.P_index__kv {
+  width: 100%;
+  position: relative;
+  margin-right: $space-side;
+  &::before {
+    content: '';
+    padding-top: 63.5%;
+    display: block;
+  }
+}
+// --------------------------------
+// プロダクション
+// --------------------------------
+.P_index__products-box {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 78vw;
+}
+.P_index__products-title-box {
+  height: 30vw;
+  width: 3vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.P_index__products-title {
+  writing-mode: vertical-rl;
+}
+.P_index__products-arrow {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.P_index__products {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.P_index__product-box {
+  width: calc(50% - 5vw);
+  &:nth-child(n + 3) {
+    margin-top: 5vw;
+  }
+}
+.P_index__product {
+  width: 100%;
+  position: relative;
+  box-shadow: 0 7px 14px 0 rgba(0,0,0,0.50);
+  &::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+  &.circle {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+.P_index__product-title {
+  width: 100%;
+  text-align: center;
+  padding-top: 2vh;
+}
+.P_index__products-show-box {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -1.7vh;
+  transform: translateY(100%);
+  align-items: center;
+  cursor: pointer;
+}
+// --------------------------------
+// サービス
+// --------------------------------
+.P_index__service {
+  margin-top: 9vh;
+  position: relative;
+}
+.P_index__service__title-container {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+.P_index__service__title-box {
+  display: flex;
+  align-items: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+.P_index__service__circle {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-right: 8px;
+}
+.P_index_service__title {
+  font-size: 2.2rem;
+}
+// --------------------------------
+// 連携
+// --------------------------------
+

@@ -1,0 +1,33 @@
+<header>
+  <div class="C_header isMoveTop" id="JS_scroll-change_target-H0">
+    <div class="C_header__inner">
+      <h1 class="C_header__logo">
+        <%= embedded_svg "logo.svg", class: "C_header__logo" %>
+        <%= link_to "", '/' , class:"U_link"%>
+      </h1>
+      <%#-- メニューリストPC --%>
+      <nav class="C_header__pc-nav">
+        <ul class="C_header__pc-nav-items pc_only">
+          <% header[:lists].each do |list| %>
+            <li class="C_header__pc-nav-item">
+              <%= link_to list[:title], list[:link], class: 'C_header__pc-nav-text' %>
+            </li>
+          <% end %>
+        </ul>
+      </nav>
+      <%#-- メニューボタン --%>
+      <div id='JS_menu-open_trigger' class="C_header__logo-box">
+        <%= embedded_svg "circle.svg", class: "C_header__logo" %>
+      </div>
+    </div>
+    <%#-- メニューリストSP --%>
+    <ul class="C_header__sp-nav-lists isMoveTop">
+      <% header[:lists].each_with_index do |list, i| %>
+        <li class="C_header__sp-nav-list" id='JS_menu-open_target_<%= i %>'>
+          <%= link_to list[:title], list[:link], class: 'C_header__sp-nav-text' %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="C_header__dummy"></div>
+</header>

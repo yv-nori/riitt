@@ -1,0 +1,68 @@
+.C_rhombus-text {
+  position: relative;
+  display: flex;
+  &:first-of-type {
+    margin-top: 7.7vh;
+  }
+  margin-top: 12.4vh;
+  &.white {
+    justify-content: flex-start;
+  }
+  &.black {
+    justify-content: flex-end;
+  }
+}
+.C_rhombus-text__circle {
+  width: 37.5%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: map-get($layer, 'cover');
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+}
+.C_rhombus-text__text-container {
+  width: 53%;
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+  position: absolute;
+  top: 50%;
+  &.white {
+    right: 0;
+    border: solid 1px $color-text;
+    transform-origin: top right;
+    transform: rotate(45deg);
+  }
+  &.black {
+    background-color: $color-text;
+    color: $color-background;
+    left: 0;
+    transform-origin: top left;
+    transform: rotate(-45deg);
+  }
+}
+.C_rhombus-text__text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &.white {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  &.black {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+.C_rhombus-text__dummy {
+  width: 100%;
+  height: 7.7vh;
+}

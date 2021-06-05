@@ -1,0 +1,15 @@
+.L_side-space {
+  padding-left: $space-side;
+  padding-right: $space-side;
+}
+.L_right-space {
+  padding-right: $space-side;
+}
+.L_top-space {
+  padding-top: $space-vertical;
+}
+.L_flex-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
