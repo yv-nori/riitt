@@ -1,8 +1,8 @@
-<svg width="16px" height="160px" viewBox="0 0 16 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Index" transform="translate(-87.000000, -492.000000)" stroke="#333333">
-            <g id="Product/text" transform="translate(88.000000, 492.000000)">
-                <polyline id="Path" transform="translate(7.002877, 80.000000) rotate(-270.000000) translate(-7.002877, -80.000000) " points="-72.9984603 87 87.0028767 87 71.3358603 73"></polyline>
+<svg width="32px" height="16px" viewBox="0 0 32 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Desktop/index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index" transform="translate(-1378.000000, -113.000000)" fill="#013D65" fill-rule="nonzero">
+            <g id="Header" transform="translate(96.000000, 85.000000)">
+                <path d="M1298.70711,43.8492424 L1297.29289,43.8492424 L1283.15076,29.7071068 C1282.76023,29.3165825 1282.76023,28.6834175 1283.15076,28.2928932 C1283.51339,27.9302635 1284.08523,27.9043614 1284.47775,28.2151869 L1284.56497,28.2928932 L1298,41.7279221 L1311.43503,28.2928932 C1311.79766,27.9302635 1312.3695,27.9043614 1312.76202,28.2151869 L1312.84924,28.2928932 C1313.21187,28.6555229 1313.23777,29.2273683 1312.92695,29.619886 L1312.84924,29.7071068 L1298.70711,43.8492424 Z" id="Path"></path>
             </g>
         </g>
     </g>

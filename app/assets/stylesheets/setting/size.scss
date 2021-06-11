@@ -46,11 +46,6 @@ $breakpoints-up: (
 	}
 }
 
-// ボーダーラディウス
-$border-radius-button: 4px;
-$border-radius-little: 10px;
-$border-radius-half: 50px;
-
 // ヘッダー高さ
 $header-height_sp: 90px;
 $header-height_pc: 122px;
@@ -68,74 +63,9 @@ $layer: (
 	cover: 5,
 	kv: 3,
 	default: 1,
-	minus: -1,
+	back: -1,
 );
-
-// 余白
-$pd-x_pc: 0;
-$pd-x_tab: 32px;
-$pd-x_sp: 24px;
 
 // スペース
 $space-side: 5vw;
 $space-vertical: 3vh;
-// $space-section: 6vh;
-// $space-section_M: 10vh;
-// $space-section_L: 12vh;
-// $space-section_2L: 18vh;
-// $space-section_pc: 60px;
-// $space-section_pc: 80px;
-// $space-photo-narrow: 6px;
-
-
-// デコレーションアイコン
-$deco-width: 75px;
-$deco-height: 75px;
-$deco-vari-width: 9.6vh;
-$deco-vari-height: 4.6vw;
-
-// イメージサイズ
-$image-width: 800px;
-$image-height: 500px;
-
-$image-tab-max: 540px;
-
-// ロゴ
-$logo-width_sp: 116px;
-$logo-width_tab: 164px;
-$logo-width_pc: 164px;
-$logo-height_sp: 27.84px;
-$logo-height_tab: 39.86px;
-$logo-height_pc: 39.86px;
-
-
-// ボタンサイズ(比率:width-height=4px)
-$button-width: 40px;
-$button-height: 36px;
-$button-material-height: 5px;
-
-// ボックスサイズ
-$box-width: 50px;
-$box-height: 10px;
-
-// アイコン
-$icon-width_M: 30px;
-$icon-width_S: 26px;
-$icon-height_M: 30px;
-$icon-height_L: 46px;
-$icon-font: 30px;
-
-// マーカー
-$marker-pd-x: 0.4em;
-$marker-pd-y: 1em;
-
-// ドロワー
-$drawer-bar-space: 5px;
-$drawer-bar-width: 30px;
-$drawer-bar-height: 3px;
-
-// ソリッドサイズ
-$border-solid-size: 1px;
-
-// サイドバー
-$side-bar-size :5vw;

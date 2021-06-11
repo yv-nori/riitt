@@ -36,11 +36,12 @@ export const headerItems = () => {
     $trigger:
       _doc.getElementById('JS_menu-open_trigger')
     ,
-    $targets: [
-      _doc.getElementById('JS_scroll-change_target-H0')
-    ],
+    $targets: [],
+    $targets_delay: [],
     Activity: 'isPassive'
   };
-  getElements('JS_menu-open_target_', HeaderItems.$targets)
+  // getElements('JS_menu-open_target_', HeaderItems.$targets)
+  getElements('JS_scroll-change_target-H', HeaderItems.$targets);
+  getElements('JS_scroll-change-delay_target-H', HeaderItems.$targets_delay);
   return HeaderItems;
 }

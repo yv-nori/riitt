@@ -6,7 +6,7 @@ import {
 // --------------------------------
 // scrollDirection
 export const scrollDirection = (windowScrollTop, startPosition) => {
-  if (windowScrollTop == 0) {
+  if (windowScrollTop === 0) {
     return 'toTop'
   } else if (windowScrollTop >= startPosition) {
     return 'toDown';
@@ -19,7 +19,7 @@ export const scrollStatus = callback => {
   callback();
 }
 export const isDown = $targets => {
-  $targets.addClass('isMoveDown');
+  $targets.addClass('isMoveDown').removeClass('isMoveTop').removeClass('isMoveUp');
 };
 export const isUp = $targets => {
   $targets.removeClass('isMoveDown').addClass('isMoveUp').removeClass('isMoveTop');
@@ -53,6 +53,33 @@ export const scrollChange = (windowScrollTop, startPosition, $targets, toTop = t
         scrollStatus(isDown.bind(null, $($targets[i])));
         break;
     }
+  }
+};
+export const scrollChangeDelay = (windowScrollTop, startPosition, $targets, toTop = true) => {
+  let length = $targets.length;
+  switch (scrollDirection(windowScrollTop, startPosition)) {
+    case 'toTop':
+      const bind = () => {
+        for (let i = 0; i < length; i++) {
+          if (toTop) {
+            scrollStatus(isTop.bind(null, $($targets[i])));
+          } else {
+            scrollStatus(isUp.bind(null, $($targets[i])));
+          }
+        }
+      }
+      setTimeout(bind, 1000);
+      break;
+    case 'toUp':
+      for (let i = 0; i < length; i++) {
+        scrollStatus(isUp.bind(null, $($targets[i])));
+      }
+      break;
+    case 'toDown':
+      for (let i = 0; i < length; i++) {
+        scrollStatus(isDown.bind(null, $($targets[i])));
+      }
+      break;
   }
 };
 // screen scroll方向やポジション

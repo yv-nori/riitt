@@ -1,73 +1,16 @@
-// ベース色
-// $color-base1: rgb(78, 144, 153);
-// $color-accent: #09203f;
-$color-background: #FDFEE4;
-// $color-background_sub: #F9F9F9;
-// $color-background2: #F4F4F2;
+// バックグラウンド
+$color-background: #FAF9F7;
+$color-background2: #F5F2ED;
+// ボーダーテキスト
+$color-border: #DDDCD9;
 $color-text: #333;
-// $color-text--thin: #757575;
-// $color-border: #111;
-// $color-border--thin: #666;
-// $color-border--thin2:#D2D3D6;
-// $color-border--thin3:#90908F;
-$header-color: #FEFFDB;
-// $color-link-text: #0f126d;
-$color-accent: #4752b3;
-// $color-recruit :#65A2C2;
-// $color-blue-text: #87c2c5;
-// $color-blue-back: #7ABEC3;
-
-$color-sub2: #636C7A;
-// 透過度
-$opacity: 0.7;
-$cover-opacity: 0.25;
-
-// 彩度
-$darken: 12%;
-
-// アイコン
-$icon-color: #fff;
-
-// フッター
-$footer-color-base: #f2f2f2;
-
-// ボタン (C_button)
-$button-background: #757575;
-$button-color: #4d4d4d;
-
-// ボックス (U_bgc__title-box)
-$title-box-color1: rgb(6, 8, 8);
-
-// シャドウ
-$shadow : rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-  rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-$shadow-strong:rgba(0, 0, 0, 0.25) 0px 54px 55px,
-  rgba(0, 0, 0, 0.12) 0px -12px 30px,
-  rgba(0, 0, 0, 0.12) 0px 4px 6px,
-  rgba(0, 0, 0, 0.17) 0px 12px 13px,
-  rgba(0, 0, 0, 0.09) 0px -3px 5px;;
-
-// グラデーション
-$thumbnail-gradation-back: #FEE140;
-$thumbnail-gradation-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
-
-// 季節カラー
-$color-spring: #E7A0A9;
-$color-summer: #96CDCD;
-$color-autumn: #ADD291;
-$color-winter: #C2AB94;
-$color-spring-thin: #FDF5F6;
-$color-summer-thin: #DFF0F0;
-$color-autumn-thin: #c0cfb4;
-$color-winter-thin: #beb3a8;
-
-// クラスカラー
-$color-toddler: #E39972;
-$color-infant: #E3839E;
-
-// 特色カラー
-$color-play: #EAF5F4;
-$color-courtesy: #FCF3F3;
-$color-environment: #EAF6ED;
-$color-expression: #EDEFFC;
-$color-together: #FAF8E4;
+$color-text-thin: #828282;
+$color-footer: #001F34;
+$color-font: #013D65;
+$color-font-strong: #002E4D;
+// アクセントカラー
+$color-accent1:#0E476D;
+$color-accent2:#015084;
+$color-accent3:#0061A1;
+$color-accent4:#0B81D0;
+$color-mask: #0090e4;

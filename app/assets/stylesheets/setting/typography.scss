@@ -12,11 +12,13 @@ $letter-spacing-base: 0.08em;
 // フォント
 // ================================
 
-$font-family-awesome: "Font Awesome 5 Free";
-
-$font-family-code: monospace;
-
-$font-family-base: honoka-maru,
+$font-family-hiragino: "游ゴシック体",
+"Yu Gothic",
+YuGothic,
+"ヒラギノ角ゴ Pro",
+"Hiragino Kaku Gothic Pro",
+"メイリオ",
+"Meiryo",
 dnp-shuei-gothic-gin-std,
 YuGothic,
 "游ゴシック体",
@@ -35,14 +37,34 @@ Helvetica,
 Verdana,
 sans-serif;
 
-
+$font-family-base: honoka-maru;
 // ================================
 // ローカルフォント
 // ================================
-
 @font-face {
   font-family: 'honoka-maru';
   src: font-url('honoka-maru.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DINPro-Medium';
+  src: font-url('DINPro-Medium.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Nunito-ExtraBold';
+  src: font-url('Nunito-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Nunito-SemiBold';
+  src: font-url('Nunito-SemiBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

@@ -1,0 +1,49 @@
+.A_text-mask[data-text] {
+  background-image: -webkit-linear-gradient(left,$color-text 50%,$color-mask 0);
+  -webkit-animation: mask-out .6s cubic-bezier(.075,.82,.165,1) 0s forwards;
+  animation: mask-out .6s cubic-bezier(.075,.82,.165,1) 0s forwards;
+  background-color: transparent;
+  background-position: 200% 0;
+  background-size: 200% 100%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  &:hover {
+    -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+    animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+  }
+}
+.A_mask {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: mask-out .6s cubic-bezier(.075,.82,.165,1) 0s forwards;
+  animation: mask-out .6s cubic-bezier(.075,.82,.165,1) 0s forwards;
+  background-image: -webkit-linear-gradient(left,#fff 50%,$color-mask 0);
+  background-position: 200% 0;
+  background-size: 200% 100%;
+  &:hover {
+    -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+    animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+  }
+}
+.A_open-menu {
+  &:hover .A_open-menu-target {
+    opacity: 1;
+    transform: initial;
+  }
+}
+@keyframes mask{
+  0%{
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+@keyframes mask-out{
+  0% {
+      background-position: 100% 0;
+  }
+  100% {
+      background-position: 0 0;
+  }
+}
