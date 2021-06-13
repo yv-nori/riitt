@@ -1,24 +1,40 @@
 const { environment } = require('@rails/webpacker')
-const { VueLoaderPlugin } = require('vue-loader')
-const vue = require('./loaders/vue')
 
-environment.plugins.prepend('VueLoaderPlugin', new VueLoaderPlugin())
-environment.loaders.prepend('vue', vue)
+// jqueryを使える設定
+// const webpack = require('webpack')
+// environment.plugins.prepend('Provide',
+//   new webpack.ProvidePlugin({
+//     $: 'jquery/src/jquery',
+//     jQuery: 'jquery/src/jquery'
+//   })
 
-// Vue.js フル版（Compiler入り）
-environment.config.resolve.alias = { 'vue$': 'vue/dist/vue.esm.js' }
-
-// ここから
-// jQueryとBootstapのJSを使えるように
+// )
+// jqueryを使える設定改
 const webpack = require('webpack')
-environment.plugins.prepend(
-  'Provide',
+environment.plugins.prepend('Provide',
   new webpack.ProvidePlugin({
-    $: 'jquery',
-    jQuery: 'jquery',
-    Popper: 'popper.js'
+    $: 'jquery/src/jquery',
+    jQuery: 'jquery/src/jquery',
+    Popper: ['popper.js', 'default']
   })
 )
-// ここまで
+// たぶんjquery-uiを使える設定
+environment.toWebpackConfig().merge({
+  resolve: {
+    alias: {
+      'jquery': 'jquery/src/jquery'
+    }
+  }
+});
+
+// sassを複数importする設定
+// $ yarn add import-glob-loaderをしてから
+const globCssImporter = require('node-sass-glob-importer');
+
+environment.loaders.get('sass')
+  .use
+  .find(item => item.loader === 'sass-loader')
+  .options
+  .sassOptions = { importer: globCssImporter() };
 
 module.exports = environment
