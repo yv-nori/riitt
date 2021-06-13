@@ -1,9 +1,12 @@
 .P_index__kv {
-  width: 33vw;
+  width: 90vw;
   position: absolute;
   top: $header-height_pc;
   right: $space-side;
   z-index: map-get($layer, 'back-image');
+  @include mq-up("tab_after") {
+    width: 33vw;
+  }
 }
 .P_index__catch-copy {
   top: 0;
