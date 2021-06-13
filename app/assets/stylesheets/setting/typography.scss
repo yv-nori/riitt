@@ -1,7 +1,7 @@
 // ================================
 // フォントサイズ
 // ================================
-$font-size-base: 1.6rem;
+$font-size-base: 1.34vw;
 $font-weight-base: 500;
 $line-height-base: 1.6;
 // ================================
@@ -65,6 +65,13 @@ $font-family-base: honoka-maru;
 @font-face {
   font-family: 'Nunito-SemiBold';
   src: font-url('Nunito-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Nunito-Bold';
+  src: font-url('Nunito-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

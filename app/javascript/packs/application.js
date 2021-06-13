@@ -9,6 +9,12 @@ require("@rails/activestorage").start();
 require("channels");
 require("jquery");
 require("../functions/lazysizes.min");
+import {
+  start
+} from "../functions/start"
+$(function () {
+  start();
+});
 // ページ関数
 let CurrentPath = location.pathname;
 if (CurrentPath == "/") {

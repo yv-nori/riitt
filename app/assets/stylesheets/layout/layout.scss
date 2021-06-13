@@ -1,6 +1,20 @@
 .L_side-space {
   padding-left: $space-side;
   padding-right: $space-side;
+  position: relative;
+}
+.L_left-space {
+  padding-left: $space-side;
+  position: relative;
+}
+.L_right-space {
+  padding-right: $space-side;
+  position: relative;
+}
+.L_side-space_L {
+  padding-left: $space-side_L;
+  padding-right: $space-side_L;
+  position: relative;
 }
 .L_right-space {
   padding-right: $space-side;
@@ -12,4 +26,16 @@
   display: flex;
   justify-content: flex-end;
 }
-
+.L_ver-space {
+    padding-bottom: $space-vertical-wrap;
+    padding-top: $space-vertical-wrap_L;
+}
+.L_back-color {
+  background-color: $color-background2;
+}
+.L_inner__half {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}

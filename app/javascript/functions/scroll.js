@@ -1,4 +1,5 @@
 import {
+  getElements,
   _doc
 } from "../functions/utility"
 // --------------------------------
@@ -55,31 +56,33 @@ export const scrollChange = (windowScrollTop, startPosition, $targets, toTop = t
     }
   }
 };
-export const scrollChangeDelay = (windowScrollTop, startPosition, $targets, toTop = true) => {
-  let length = $targets.length;
-  switch (scrollDirection(windowScrollTop, startPosition)) {
-    case 'toTop':
-      const bind = () => {
-        for (let i = 0; i < length; i++) {
-          if (toTop) {
-            scrollStatus(isTop.bind(null, $($targets[i])));
-          } else {
-            scrollStatus(isUp.bind(null, $($targets[i])));
-          }
-        }
-      }
-      setTimeout(bind, 1000);
-      break;
-    case 'toUp':
-      for (let i = 0; i < length; i++) {
-        scrollStatus(isUp.bind(null, $($targets[i])));
-      }
-      break;
-    case 'toDown':
-      for (let i = 0; i < length; i++) {
-        scrollStatus(isDown.bind(null, $($targets[i])));
-      }
-      break;
+// scrollTrigger
+export const scrollTrigger = (windowScrollTop, Positions, startScreenPosition = screenCenter, addStart = 0, addEnd = 0) => {
+  const startScreen = startScreenPosition() + windowScrollTop;
+  let length = Positions.start.length
+  for (let i = 0; i < length; i++) {
+    if (startScreen >= Positions.start[i] + addStart && startScreen <= Positions.end[i] + addEnd) {
+      return i
+    }
+  }
+  return false
+}
+export const scrollShowJudge = (windowScrollTop, position, addStart = 0, startScreenPosition = screenBottom) => {
+  const startScreen = startScreenPosition() + windowScrollTop;
+  if (startScreen >= position + addStart) {
+    return true
+  } else {
+    return false
+  }
+}
+export const scrollShow = (windowScrollTop, Items, addStart = 0) => {
+  let length = Items.$targets.length;
+  for (let i = 0; i < length; i++) {
+    if (scrollShowJudge(windowScrollTop, Items.positions.start[i], addStart)) {
+      $(Items.$targets[i]).addClass('isActive');
+    } else {
+      // $(Items.$targets[i]).removeClass('isActive');
+    }
   }
 };
 // screen scroll方向やポジション
@@ -94,6 +97,7 @@ export const screenBottom = () => {
   let html = window.document.documentElement;
   return html.clientHeight
 }
+
 //scrollToTop（ページトップへ戻る）
 export const scrollToTop = (windowScrollTop, startPosition, Items, addStart = 67.5, addEnd = 240, startScreenPosition = screenBottom) => {
   $(Items.$target).removeClass('A_isHide');
@@ -144,14 +148,6 @@ export const smoothScroll = (Items, speed = 500) => {
 // --------------------------------
 // DOMの格納
 // --------------------------------
-// $changeTargets
-export const $changeTargets = addItems => {
-  const $changeTargets = [
-    _doc.getElementById('JS_scroll-change_target'),
-    ...addItems
-  ];
-  return $changeTargets;
-};
 // toTopItems
 export const toTopItems = () => {
   const Items = {
@@ -206,5 +202,18 @@ export const smoothItems = () => {
     Items.$targets.push($target);
   }
   resetSmoothPositions(Items);
+  return Items;
+}
+// scrollShowItems
+export const scrollShowItems = () => {
+  const Items = {
+    $targets: [],
+    positions: {
+      start: [],
+      end: []
+    }
+  }
+  getElements('JS_scroll_show_', Items.$targets)
+  resetPositions(Items.positions, Items.$targets);
   return Items;
 }

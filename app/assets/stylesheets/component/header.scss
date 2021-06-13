@@ -5,16 +5,22 @@
   left: 0;
   height: 0;
   font-family: 'Nunito-SemiBold';
+  z-index: map-get($layer, 'header');
 }
 .C_header__logo {
   position: absolute;
   left: $space-side;
-  top: $space-vertical;
+  top: 3.5vw;
+  transform: translateY(-50%);
+  svg {
+    width: 4vw;
+  }
 }
 .C_header__nav-lists {
   position: absolute;
   right: $space-side;
-  top: $space-vertical;
+  top: 3.5vw;
+  transform: translateY(-50%);
   display: flex;
 }
 .C_header__nav-list {
@@ -110,16 +116,16 @@
 // ヘッダーオープナー
 .C_header__opener {
   right: 4.16667vw;
-  top: 3.05556vw;
+  top: 3.5vw;
+  transform: translate(0, -50%);
   display: flex;
   align-items: center;
   position: absolute;
   cursor: pointer;
   z-index: 1100;
   transition: transform .5s .3s;
-  transform: translateX(0);
   &.isMoveTop {
-    transform: translateX(200%);
+    transform: translate(200%, -50%);
     transition: transform .5s .35s;
   }
   &:hover .A_text-mask {
@@ -216,4 +222,7 @@
       transition: transform .35s,background-color .3s .3s;
     }
   }
+}
+.C_header__dummy {
+  height: $header-height_pc;
 }
