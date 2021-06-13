@@ -44,7 +44,10 @@ body {
 
 body {
   font-family: $font-family-base, sans-serif;
-  font-size: $font-size-base;
+  font-size: $font-size-base_sp;
+  @include mq-up("tab_after") {
+    font-size: $font-size-base;
+  }
   font-weight: $font-weight-base;
   color: $color-text;
   line-height: $line-height-base;

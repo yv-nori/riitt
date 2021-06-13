@@ -13,6 +13,7 @@
   height: auto;
   width: 93.33333vw;
   @include mq-up("tab_after") {
+    padding-top: 0;
     height: 35.27778vw;
     padding-bottom: 8.40278vw;
     width: 50vw;

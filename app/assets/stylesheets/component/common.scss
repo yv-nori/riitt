@@ -31,11 +31,14 @@
   }
 }
 .C_common__catch {
-  font-size: 6vw;
   line-height: 116%;
   font-weight: 600;
   font-family: 'Nunito-ExtraBold';
   white-space: nowrap;
+  font-size: 11vw;
+  @include mq-up("tab_after") {
+    font-size: 6vw;
+  }
 }
 .C_common__title_S {
   letter-spacing: .01em;
@@ -44,7 +47,10 @@
 }
 .C_common__title {
   font-family: 'honoka-maru';
-  font-size: 3vw;
+  font-size: 6vw;
+  @include mq-up("tab_after") {
+    font-size: 3vw;
+  }
 }
 .C_common__title_L {
   font-family: 'DINPro-Medium';
