@@ -5,13 +5,14 @@
     "@rails/actioncable": "^6.0.0-alpha",
     "@rails/activestorage": "^6.0.0-alpha",
     "@rails/ujs": "^6.0.0-alpha",
-    "@rails/webpacker": "^3.6.0",
+    "@rails/webpacker": "^5.4.0",
+    "request": "^2.88.2",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
   "devDependencies": {
     "firebase": "^8.6.4",
     "minimatch": "^3.0.4",
-    "webpack-dev-server": "^3.7.2"
+    "webpack-dev-server": "^1.16.5"
   }
 }
