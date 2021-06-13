@@ -6,9 +6,17 @@
   z-index: map-get($layer, 'back-image');
 }
 .P_index__catch-copy {
-  height: 35.27778vw;
-  padding-bottom: 8.40278vw;
-  width: 50vw;
+  top: 0;
+  position: relative;
+  padding-top: 98.13333vw;
+  left: 5.33333vw;
+  height: auto;
+  width: 93.33333vw;
+  @include mq-up("tab_after") {
+    height: 35.27778vw;
+    padding-bottom: 8.40278vw;
+    width: 50vw;
+  }
   .copy {
     margin-top: 3.26389vw;
     margin-left: 4.16667vw;
