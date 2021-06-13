@@ -7,6 +7,7 @@
     "@rails/ujs": "^6.0.0-alpha",
     "@rails/webpacker": "^5.4.0",
     "import-glob-loader": "^1.1.0",
+    "jquery": "^3.6.0",
     "node-sass": "^6.0.0",
     "node-sass-globbing": "^0.0.23",
     "request": "^2.88.2",
@@ -17,5 +18,25 @@
     "firebase": "^8.6.4",
     "minimatch": "^3.0.4",
     "webpack-dev-server": "^1.16.5"
-  }
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "babel.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yv-nori/riitt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yv-nori/riitt/issues"
+  },
+  "homepage": "https://github.com/yv-nori/riitt#readme"
 }
