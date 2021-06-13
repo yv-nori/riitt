@@ -24,13 +24,16 @@ Rails.application.configure do
 
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
+  config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
-
+  #動的にcompileするか。trueだとprecompileしていないファイルを動的にコンパイルするのでproductionではfalseが良さそう。
+  # config.assets.compile = false
+  config.assets.compile = true
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
-
+  # digest付与を有効にするかどうか。pipelineを通した後のファイルにつく数字をつけるかどうかです。付けてあげるとキャッシュに残っているものも変更を加えることが出来るのでproductionではtrueが良さそう。以下default。
+  config.assets.digest = true
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # for Apache
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
