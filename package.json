@@ -17,7 +17,7 @@
   "devDependencies": {
     "firebase": "^8.6.4",
     "minimatch": "^3.0.4",
-    "webpack-dev-server": "^1.16.5"
+    "webpack-dev-server": "^3.11.2"
   },
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "main": "babel.config.js",
