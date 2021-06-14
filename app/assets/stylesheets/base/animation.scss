@@ -8,6 +8,9 @@
   background-size: 200% 100%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  &.white {
+    background-image: -webkit-linear-gradient(left,#fff 50%,$color-mask 0);
+  }
   &:hover {
     -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
     animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;

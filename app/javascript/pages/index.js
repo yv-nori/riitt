@@ -10,7 +10,9 @@ import {
 import {
   headerItems, menuOpen, headerChangeDelay
 } from "../functions/header"
-
+import {
+  media, changeMedia
+} from "../functions/utility"
 $(function () {
   let windowScrollTop = 0
   const HeaderItems = headerItems();
@@ -24,10 +26,21 @@ $(function () {
     windowScrollTop = $(this).scrollTop();
     scrollMove(windowScrollTop, $MoveItems);
     scrollShow(windowScrollTop, $ScrollShowItems, 100);
-    if (HeaderItems.Activity === 'isPassive') {
-    headerChangeDelay(windowScrollTop, startPosition, HeaderItems, true);
-  }
-  startPosition = windowScrollTop;
+    switch (media()) {
+      case "SP":
+        break;
+      case "Tab":
+        if (HeaderItems.Activity === 'isPassive') {
+          headerChangeDelay(windowScrollTop, startPosition, HeaderItems, true);
+        }
+        break;
+      case "PC":
+        if (HeaderItems.Activity === 'isPassive') {
+          headerChangeDelay(windowScrollTop, startPosition, HeaderItems, true);
+        }
+        break;
+    };
+    startPosition = windowScrollTop;
   });
   window.addEventListener('resize', () => {
     resetPositions($ScrollShowItems.positions, $ScrollShowItems.$targets);

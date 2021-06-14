@@ -8,6 +8,7 @@
   z-index: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   .deco-visit {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 151, 0, 1);
     transition: transform 1s cubic-bezier(.165,.84,.44,1);
@@ -38,267 +39,581 @@
     background-color: $color-accent4;
   }
   .deco0 {
-    top: -0.9%;
-    left: 85.4%;
-    width: 3.77778vw;
-    height: 8.77778vw;
+    will-change: transform;
+    top: -5vw;
+    left: 69vw;
+    width: 6.4vw;
+    height: 17.77778vw;
+    @include mq-up("tab_after") {
+      top: -0.9%;
+      left: 85.4%;
+      width: 3.77778vw;
+      height: 8.77778vw;
+    }
   }
   .deco1 {
-    top: -0.6%;
-    left: 50%;
-    width: 8.77778vw;
-    height: 8.77778vw;
+    will-change: transform;
+    top: -9.6vw;
+    left: -9vw;
+    width: 16.77778vw;
+    height: 16.77778vw;
+    @include mq-up("tab_after") {
+      top: -0.6%;
+      left: 50%;
+      width: 8.77778vw;
+      height: 8.77778vw;
+    }
   }
   .deco2 {
-    top: 0.3%;
-    left: 15%;
-    width: 5.77778vw;
-    height: 5.77778vw;
+    will-change: transform;
+    top: 211vw;
+    left: -5vw;
+    width: 10vw;
+    height: 10vw;
+    @include mq-up("tab_after") {
+      top: 0.3%;
+      left: 15%;
+      width: 5.77778vw;
+      height: 5.77778vw;
+    }
   }
   .deco3 {
-    top: -0.06%;
-    left: 27.3%;
-    width: 8.77778vw;
-    height: 15.77778vw;
+    will-change: transform;
+    top: 133vw;
+    left: 89vw;
+    width: 22vw;
+    height: 41vw;
+    @include mq-up("tab_after") {
+      top: -0.06%;
+      left: 27.3%;
+      width: 8.77778vw;
+      height: 15.77778vw;
+    }
   }
   .deco4 {
-    top: 3.94%;
-    left: -1%;
-    width: 2.77778vw;
-    height: 9.77778vw;
+    will-change: transform;
+    top: 94vw;
+    left: -3vw;
+    width: 6.4vw;
+    height: 19.77778vw;
+    @include mq-up("tab_after") {
+      top: 3.94%;
+      left: -1%;
+      width: 2.77778vw;
+      height: 9.77778vw;
+    }
   }
   .deco5 {
-    top: 5.2%;
-    left: 38%;
-    width: 2.77778vw;
-    height: 2.77778vw;
+    will-change: transform;
+    top: 189vw;
+    left: 87vw;
+    width: 5.6vw;
+    height: 5.6vw;
+    @include mq-up("tab_after") {
+      top: 5.2%;
+      left: 38%;
+      width: 2.77778vw;
+      height: 2.77778vw;
+    }
   }
   .deco6 {
-    top: 5.9%;
-    left: 38%;
-    width: 2.77778vw;
-    height: 11.77778vw;
+    will-change: transform;
+    top: 199vw;
+    left: 87vw;
+    width: 5.6vw;
+    height: 20.77778vw;
+    @include mq-up("tab_after") {
+      top: 5.9%;
+      left: 38%;
+      width: 2.77778vw;
+      height: 11.77778vw;
+    }
   }
   .deco7 {
-    top: 7.2%;
-    left: 32.5%;
-    width: 13.77778vw;
-    height: 11.77778vw;
+    will-change: transform;
+    top: 213vw;
+    left: 78.7vw;
+    width: 21.77778vw;
+    height: 24.77778vw;
+    @include mq-up("tab_after") {
+      top: 7.2%;
+      left: 32.5%;
+      width: 13.77778vw;
+      height: 11.77778vw;
+    }
   }
   .deco8 {
-    top: 4.7%;
-    left: 43.5%;
-    width: 2.77778vw;
-    height: 9.77778vw;
+    will-change: transform;
+    top: 266.5vw;
+    left: 86vw;
+    width: 5.4vw;
+    height: 31.4vw;
+    @include mq-up("tab_after") {
+      top: 4.7%;
+      left: 43.5%;
+      width: 2.77778vw;
+      height: 9.77778vw;
+    }
   }
   .deco9 {
-    top: 4.94%;
-    right: -1%;
-    width: 2.77778vw;
-    height: 10.77778vw;
+    will-change: transform;
+    top: -4vw;
+    right: 39vw;
+    width: 6.6vw;
+    height: 13.77778vw;
+    @include mq-up("tab_after") {
+      top: 4.94%;
+      right: -1%;
+      width: 2.77778vw;
+      height: 10.77778vw;
+    }
   }
   .deco10 {
-    top: 12.7%;
+    will-change: transform;
+    top: 318vw;
     width: 22.77778vw;
     height: 12.77778vw;
-    left: -6%;
+    left: 83vw;
+    display: none;
+    @include mq-up("tab_after") {
+      display: block;
+      top: 12.7%;
+      width: 22.77778vw;
+      height: 12.77778vw;
+      left: -6%;
+    }
   }
   .deco11 {
-    top: 9%;
-    width: 3vw;
-    height: 7.77778vw;
-    left: 27%;
+    will-change: transform;
+    top: 278.5vw;
+    width: 7vw;
+    height: 16.77778vw;
+    left: 6vw;
+    @include mq-up("tab_after") {
+      top: 9%;
+      width: 3vw;
+      height: 7.77778vw;
+      left: 27%;
+    }
   }
   .deco12 {
-    top: 19.3%;
-    width: 3vw;
-    height: 7.77778vw;
-    left: 43%;
+    will-change: transform;
+    top: 378vw;
+    width: 5vw;
+    height: 23.77778vw;
+    left: 97vw;
+    @include mq-up("tab_after") {
+      top: 19.3%;
+      width: 3vw;
+      height: 7.77778vw;
+      left: 43%;
+    }
   }
   .deco13 {
-    top: 23%;
-    width: 4vw;
+    will-change: transform;
+    top: 491vw;
+    width: 5vw;
     height: 13.77778vw;
-    left: 48%;
+    left: -2.5vw;
+    @include mq-up("tab_after") {
+      top: 23%;
+      width: 4vw;
+      height: 13.77778vw;
+      left: 48%;
+    }
   }
   .deco14 {
-    top: 15%;
-    width: 3vw;
+    will-change: transform;
+    top: 295vw;
+    width: 5vw;
     height: 13.77778vw;
-    right: -1%;
+    right: 18vw;
+    @include mq-up("tab_after") {
+      top: 15%;
+      width: 3vw;
+      height: 13.77778vw;
+      right: -1%;
+    }
   }
   .deco15 {
-    top: 31%;
-    width: 3vw;
-    height: 13.77778vw;
-    right: 83%;
+    will-change: transform;
+    top: 866vw;
+    width: 6vw;
+    height: 26.77778vw;
+    right: 7vw;
+    @include mq-up("tab_after") {
+      top: 31%;
+      width: 3vw;
+      height: 13.77778vw;
+      right: 83%;
+    }
   }
   .deco16 {
-    top: 39%;
-    width: 4vw;
-    height: 9.77778vw;
-    right: 75.7%;
+    will-change: transform;
+    top: 901vw;
+    width: 6vw;
+    height: 34.77778vw;
+    right: 97vw;
+    @include mq-up("tab_after") {
+      top: 39%;
+      width: 4vw;
+      height: 9.77778vw;
+      right: 75.7%;
+    }
   }
   .deco17 {
-    top: 25%;
-    width: 3vw;
-    height: 13.77778vw;
-    right: 92%;
+    will-change: transform;
+    top: 882vw;
+    width: 5vw;
+    height: 22.77778vw;
+    right: 3vw;
+    @include mq-up("tab_after") {
+      top: 25%;
+      width: 3vw;
+      height: 13.77778vw;
+      right: 92%;
+    }
   }
   .deco18 {
-    top: 17.2%;
-    left: 82%;
-    width: 2.77778vw;
-    height: 2.77778vw;
+    will-change: transform;
+    top: 302vw;
+    left: 88vw;
+    width: 5.77778vw;
+    height: 17.77778vw;
+    @include mq-up("tab_after") {
+      top: 17.2%;
+      left: 82%;
+      width: 2.77778vw;
+      height: 2.77778vw;
+    }
   }
   .deco19 {
-    top: 17.9%;
-    left: 82%;
-    width: 2.77778vw;
-    height: 11.77778vw;
+    will-change: transform;
+    top: 596vw;
+    left: 82vw;
+    width: 5.77778vw;
+    height: 40.77778vw;
+    @include mq-up("tab_after") {
+      top: 17.9%;
+      left: 82%;
+      width: 2.77778vw;
+      height: 11.77778vw;
+    }
   }
   .deco20 {
-    top: 19.2%;
-    left: 76.5%;
+    will-change: transform;
+    top: 900vw;
+    left: 95vw;
     width: 13.77778vw;
     height: 11.77778vw;
+    display: none;
+    @include mq-up("tab_after") {
+      display: block;
+      top: 19.2%;
+      left: 76.5%;
+      width: 13.77778vw;
+      height: 11.77778vw;
+    }
   }
   .deco21 {
-    top: 52%;
-    width: 4vw;
-    height: 9.77778vw;
-    right: 6.7%;
+    will-change: transform;
+    top: 1061vw;
+    width: 5vw;
+    height: 29.77778vw;
+    right: 86vw;
+    @include mq-up("tab_after") {
+      top: 52%;
+      width: 4vw;
+      height: 9.77778vw;
+      right: 6.7%;
+    }
   }
   .deco22 {
-    top: 58%;
-    width: 3vw;
-    height: 13.77778vw;
-    right: 1%;
+    will-change: transform;
+    top: 1208vw;
+    width: 5vw;
+    height: 27.77778vw;
+    right: 5vw;
+    @include mq-up("tab_after") {
+      top: 58%;
+      width: 3vw;
+      height: 13.77778vw;
+      right: 1%;
+    }
   }
   .deco23 {
-    top: 98%;
-    width: 3vw;
-    height: 13.77778vw;
-    right: 81%;
+    will-change: transform;
+    top: 1646vw;
+    width: 5vw;
+    height: 19.77778vw;
+    right: 90vw;
+    @include mq-up("tab_after") {
+      top: 98%;
+      width: 3vw;
+      height: 13.77778vw;
+      right: 81%;
+    }
   }
   .deco24 {
-    top: 100.4%;
-    width: 3vw;
-    height: 3vw;
-    right: 81%;
+    will-change: transform;
+    top: 2272vw;
+    width: 5vw;
+    height: 23vw;
+    right: 90vw;
+    @include mq-up("tab_after") {
+      top: 100.4%;
+      width: 3vw;
+      height: 3vw;
+      right: 81%;
+    }
   }
   .deco25 {
-top: 83%;
-    width: 3vw;
+    will-change: transform;
+    top: 1914vw;
+    width: 5vw;
     height: 16.77778vw;
-    right: 75%;
+    right: 78vw;
+    @include mq-up("tab_after") {
+      top: 83%;
+      width: 3vw;
+      height: 16.77778vw;
+      right: 75%;
+    }
   }
   .deco26 {
-    top: 88%;
+    will-change: transform;
+    top: 2033vw;
     width: 5vw;
-    height: 13.77778vw;
-    right: 33%;
+    height: 28.77778vw;
+    right: 9vw;
+    @include mq-up("tab_after") {
+      top: 88%;
+      width: 5vw;
+      height: 13.77778vw;
+      right: 33%;
+    }
   }
   .deco27 {
-    top: 72%;
-    width: 3vw;
-    height: 19.77778vw;
-    right: 18%;
+    will-change: transform;
+    top: 1678vw;
+    width: 6vw;
+    height: 12.77778vw;
+    right: 32vw;
+    @include mq-up("tab_after") {
+      top: 72%;
+      width: 3vw;
+      height: 19.77778vw;
+      right: 18%;
+    }
   }
   .deco28 {
-    top: 97%;
-    width: 3vw;
-    height: 18.77778vw;
-    right: 13%;
+    will-change: transform;
+    top: 2275vw;
+    width: 5vw;
+    height: 26.77778vw;
+    right: 20vw;
+    @include mq-up("tab_after") {
+      top: 97%;
+      width: 3vw;
+      height: 18.77778vw;
+      right: 13%;
+    }
   }
   .deco29 {
-    top: 100.1%;
-    width: 3vw;
-    height: 3vw;
-    right: 13%;
+    will-change: transform;
+    top: 2305vw;
+    width: 5vw;
+    height: 5vw;
+    right: 20vw;
+    @include mq-up("tab_after") {
+      top: 100.1%;
+      width: 3vw;
+      height: 3vw;
+      right: 13%;
+    }
   }
   .deco30 {
-    top: 139.9%;
-    width: 3vw;
-    height: 21vw;
-    right: 41%;
+    will-change: transform;
+    top: 3322vw;
+    width: 5vw;
+    height: 19vw;
+    right: 20vw;
+    @include mq-up("tab_after") {
+      top: 139.9%;
+      width: 3vw;
+      height: 21vw;
+      right: 41%;
+    }
   }
   .deco31 {
-    top: 139.1%;
-    width: 3vw;
-    height: 3vw;
-    right: 41%;
+    will-change: transform;
+    top: 3314vw;
+    width: 5vw;
+    height: 5vw;
+    right: 20vw;
+    @include mq-up("tab_after") {
+      top: 139.1%;
+      width: 3vw;
+      height: 3vw;
+      right: 41%;
+    }
   }
   .deco32 {
-    top: 94.1%;
-    width: 3vw;
-    height: 21vw;
-    right: 63%;
+    will-change: transform;
+    top: 2790vw;
+    width: 6vw;
+    height: 19vw;
+    right: 8vw;
+    @include mq-up("tab_after") {
+      top: 94.1%;
+      width: 3vw;
+      height: 21vw;
+      right: 63%;
+    }
   }
   .deco33 {
-    top: 102.1%;
-    width: 5vw;
-    height: 13vw;
-    right: 71%;
+    will-change: transform;
+    top: 2944vw;
+    width: 6vw;
+    height: 21vw;
+    right: 88vw;
+    @include mq-up("tab_after") {
+      top: 102.1%;
+      width: 5vw;
+      height: 13vw;
+      right: 71%;
+    }
   }
   .deco34 {
-    top: 91.1%;
-    width: 4vw;
-    height: 19vw;
-    right: 19%;
+    will-change: transform;
+    top: 2416vw;
+    width: 7vw;
+    height: 20vw;
+    right: 31vw;
+    display: none;
+    @include mq-up("tab_after") {
+      display: block;
+      top: 91.1%;
+      width: 4vw;
+      height: 19vw;
+      right: 19%;
+    }
   }
   .deco35 {
-    top: 125.1%;
-    width: 3vw;
-    height: 15vw;
-    right: 13%;
+    will-change: transform;
+    top: 3361vw;
+    width: 6vw;
+    height: 18vw;
+    right: 31vw;
+    @include mq-up("tab_after") {
+      top: 125.1%;
+      width: 3vw;
+      height: 15vw;
+      right: 13%;
+    }
   }
   .deco36 {
-    top: 135.1%;
-    width: 3vw;
-    height: 11vw;
-    left: -1%;
+    will-change: transform;
+    top: 3383vw;
+    width: 6vw;
+    height: 6vw;
+    left: 63vw;
+    @include mq-up("tab_after") {
+      top: 135.1%;
+      width: 3vw;
+      height: 11vw;
+      left: -1%;
+    }
   }
   .deco37 {
-    top: 136.1%;
-    width: 3vw;
-    height: 11vw;
-    left: 4%;
+    will-change: transform;
+    top: 3307vw;
+    width: 5vw;
+    height: 26vw;
+    left: 50vw;
+    @include mq-up("tab_after") {
+      top: 136.1%;
+      width: 3vw;
+      height: 11vw;
+      left: 4%;
+    }
   }
   .deco38 {
-    top: 138.1%;
-    width: 3vw;
-    height: 3vw;
-    left: 4%;
+    will-change: transform;
+    top: 3598vw;
+    width: 5vw;
+    height: 66vw;
+    left: 24%;
+    @include mq-up("tab_after") {
+      top: 138.1%;
+      width: 3vw;
+      height: 3vw;
+      left: 4%;
+    }
   }
   .deco39 {
-    top: 121.1%;
-    width: 3vw;
-    height: 13vw;
-    right: 8%;
+    will-change: transform;
+    top: 3036vw;
+    width: 7vw;
+    height: 18vw;
+    right: 20vw;
+    @include mq-up("tab_after") {
+      top: 121.1%;
+      width: 3vw;
+      height: 13vw;
+      right: 8%;
+    }
   }
   .deco40 {
-    top: 130.1%;
-    width: 3vw;
-    height: 15vw;
-    right: 3%;
+    will-change: transform;
+    top: 3599vw;
+    width: 6vw;
+    height: 34vw;
+    left: -3vw;
+    @include mq-up("tab_after") {
+      top: 130.1%;
+      width: 3vw;
+      height: 15vw;
+      right: 3%;
+    }
   }
   .deco41 {
-    top: 112.1%;
-    width: 3vw;
-    height: 19vw;
-    left: 11%;
+    will-change: transform;
+    top: 3039vw;
+    width: 7vw;
+    height: 33vw;
+    left: 15%;
+    @include mq-up("tab_after") {
+      top: 112.1%;
+      width: 3vw;
+      height: 19vw;
+      left: 11%;
+    }
   }
   .deco42 {
-    top: 156.1%;
-    width: 5vw;
-    height: 14vw;
-    left: 16%;
+    will-change: transform;
+    top: 3939vw;
+    width: 8vw;
+    height: 38vw;
+    left: 65vw;
+    @include mq-up("tab_after") {
+      top: 156.1%;
+      width: 5vw;
+      height: 14vw;
+      left: 16%;
+    }
   }
   .deco43 {
-    top: 157.1%;
-    width: 3vw;
-    height: 16vw;
-    right: -1%;
+    will-change: transform;
+    top: 4109vw;
+    width: 6vw;
+    height: 19vw;
+    right: -3vw;
+    @include mq-up("tab_after") {
+      top: 157.1%;
+      width: 3vw;
+      height: 16vw;
+      right: -1%;
+    }
   }
 }

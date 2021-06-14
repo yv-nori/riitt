@@ -11,15 +11,19 @@
 .P_index__catch-copy {
   top: 0;
   position: relative;
-  padding-top: 98.13333vw;
-  left: 5.33333vw;
   height: auto;
   width: 93.33333vw;
+  padding-top: 111.13333vw;
+  margin-bottom: 13vw;
+  margin-left: auto;
+  margin-right: auto;
   @include mq-up("tab_after") {
     padding-top: 0;
     height: 35.27778vw;
     padding-bottom: 8.40278vw;
     width: 50vw;
+    margin-bottom: 6vw;
+    margin-left: 3.47222vw;
   }
   .copy {
     margin-top: 3.26389vw;
@@ -31,6 +35,26 @@
 }
 .P_index__who-we-are {
   display: flex;
+  flex-direction: column;
+  @include mq-up("tab_after") {
+    flex-direction: row;
+  }
+  .svg-container,
+  .text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @include mq-up("tab_after") {
+      width: 50vw;
+    }
+  }
+  .svg-container {
+    height: 120vw;
+    @include mq-up("tab_after") {
+      height: initial;
+    }
+  }
   .circle,
   .web,
   .contents,
@@ -38,29 +62,60 @@
     position: absolute;
   }
   .circle {
-    width: 24vw;
-    height: 24vw;
+    width: 70vw;
+    height: 70vw;
     left: 50%;
-    top: 14%;
-    left: 29%;
+    top: 31%;
+    left: 11%;
+    @include mq-up("tab_after") {
+      width: 24vw;
+      height: 24vw;
+      left: 50%;
+      top: 14%;
+      left: 29%;
+    }
+    path {
+      stroke-width: 1.6vw;
+      @include mq-up("tab_after") {
+        stroke-width: .5vw;
+      }
+    }
   }
   .web {
-    width: 12vw;
-    height: 12vw;
-    top: 0%;
-    right: 10%;
+    width: 42vw;
+    height: 42vw;
+    top: 9%;
+    right: 13%;
+    @include mq-up("tab_after") {
+      width: 12vw;
+      height: 12vw;
+      top: 0%;
+      right: 10%;
+    }
   }
   .contents {
-    width: 11vw;
-    height: 11vw;
-    bottom: -9%;
-    right: 17%;
+    width: 32vw;
+    height: 37vw;
+    bottom: 0%;
+    right: 2%;
+    @include mq-up("tab_after") {
+      width: 11vw;
+      height: 11vw;
+      bottom: -9%;
+      right: 17%;
+    }
   }
   .local {
-    width: 10vw;
-    height: 10vw;
-    top: 38%;
-    left: 18%;
+    width: 40vw;
+    height: 40vw;
+    top: 44%;
+    left: -8%;
+    @include mq-up("tab_after") {
+      width: 10vw;
+      height: 10vw;
+      top: 38%;
+      left: 18%;
+    }
   }
   .web-text,
   .contents-text,
@@ -70,38 +125,64 @@
     position: absolute;
   }
   .web-text {
-    top: 22.7%;
-    left: 71.7%;
+    top: 28.7%;
+    left: 56.3%;
+    @include mq-up("tab_after") {
+      top: 22.7%;
+      left: 71.7%;
+    }
   }
   .contents-text {
-    top: 93%;
-    left: 61.7%;
+    top: 86.4%;
+    left: 66.7%;
+    @include mq-up("tab_after") {
+      top: 93%;
+      left: 61.7%;
+    }
   }
   .local-text {
-    top: 56.8%;
-    left: 25.3%;
+    top: 62.8%;
+    left: 10.1%;
+    @include mq-up("tab_after") {
+      top: 56.8%;
+      left: 25.3%;
+    }
   }
   .creative-text {
-    top: 48.8%;
-    left: 51.2%;
+    top: 47.7%;
+    left: 45.8%;
+    @include mq-up("tab_after") {
+      top: 48.8%;
+      left: 51.2%;
+    }
   }
   .fun-text {
-    top: 55.8%;
-    left: 55.4%;
+    top: 52.8%;
+    left: 51.4%;
+    @include mq-up("tab_after") {
+      top: 55.8%;
+      left: 55.4%;
+    }
   }
   .C_common__title-line,
   .C_common__title,
   .text,
   .buttun {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    @include mq-up("tab_after") {
+      justify-content: flex-end;
+    }
   }
   .C_common__title {
     margin-top: 3.54167vw;
   }
   .text {
-    margin-top: 1.38889vw;
-    margin-left: 10vw;
+    margin-top: 3vw;
+    @include mq-up("tab_after") {
+      margin-top: 1.38889vw;
+      margin-left: 10vw;
+    }
   }
   .buttun {
     width: 100%;
@@ -109,25 +190,55 @@
   }
 }
 .P_index__what-we-do {
-  margin-top: 12.91667vw;
-  padding-bottom: 8.75vw;;
+  padding-top: 20vw;
+  padding-bottom: 26.87467vw;
+  @include mq-up("tab_after") {
+    margin-top: 12.91667vw;
+    padding-bottom: 8.75vw;
+  }
+  .C_common__title_L {
+    &.left,
+    &.right {
+      position: absolute;
+      top: -104.33333vw;
+      @include mq-up("tab_after") {
+        top: -33%;
+        width: initial;
+      }
+    }
+    &.left {
+    left: 4.26667vw;
+      @include mq-up("tab_after") {
+        left: -3.33333vw;
+      }
+    }
+    &.right {
+    right: 4.26667vw;
+      @include mq-up("tab_after") {
+        right: -3.33333vw;
+      }
+    }
+  }
   .C_common__title-line {
     padding-left: $space-side_L;
   }
   .contents {
-    height: 62.5vw;
     position: relative;
     width: 100%;
-    margin-top: 6vw;
+    height: 179.25333vw;
+    margin-top: 25.06667vw;
+    @include mq-up("tab_after") {
+      margin-top: 6vw;
+      height: 62.5vw;
+    }
     &:first-of-type {
-      margin-top: 0;
+      @include mq-up("tab_after") {
+        margin-top: 0;
+      }
     }
   }
   .card {
     padding: 0 5vw;
-    width: 52.08333vw;
-    height: 29.86111vw;
-    border-radius: .83333vw;
     position: absolute;
     z-index: map-get($layer, 'cover');
     background-color: #fff;
@@ -135,49 +246,116 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 18.75vw;
+    width: 89.86667vw;
+    top: 82.72vw;
+    height: 96.53333vw;
+    @include mq-up("tab_after") {
+      width: 52.08333vw;
+      height: 29.86111vw;
+      top: 18.75vw;
+    }
+    .C_common__title_S {
+          margin-top: 0.4vw;
+    }
+    .C_common__title {
+      margin-top: 1.33333vw;
+      @include mq-up("tab_after") {
+        margin-top: 0;
+      }
+    }
     &.left {
-      left: 6.94444vw;
+      border-top-right-radius: 3.2vw;
+      border-bottom-right-radius: 3.2vw;
+      left: 0;
+      @include mq-up("tab_after") {
+        border-top-right-radius: .83333vw;
+        border-bottom-right-radius: .83333vw;
+        border-top-left-radius: .83333vw;
+        border-bottom-left-radius: .83333vw;
+        left: 6.94444vw;
+      }
     }
     &.right {
-      right: 6.94444vw;
+      border-top-left-radius: 3.2vw;
+      border-bottom-left-radius: 3.2vw;
+      right: 0;
+      @include mq-up("tab_after") {
+        border-top-right-radius: .83333vw;
+        border-bottom-right-radius: .83333vw;
+        border-top-left-radius: .83333vw;
+        border-bottom-left-radius: .83333vw;
+        right: 6.94444vw;
+      }
     }
     .text {
-      margin-top: .97222vw;
+      line-height: 160%;
+      margin-top: 3.46667vw;
+      width: 68.26667vw;
+      @include mq-up("tab_after") {
+        margin-top: .97222vw;
+        width: 38.26389vw;
+      }
     }
     .C_common__buttun {
-    margin-top: 2.43056vw;
+      width: 68.26667vw;
+      margin-top: 8vw;
+      @include mq-up("tab_after") {
+        margin-top: 2.43056vw;
+        width: 16.38889vw;
+      }
     }
   }
   .img-box {
     position: absolute;
     top: 0;
-    width: 50%;
-    height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
     z-index: 1;
     overflow: hidden;
     background-color: grey;
+    width: 84.26667vw;
+    height: 96vw;
+    @include mq-up("tab_after") {
+      width: 50%;
+      height: 100%;
+    }
     &.left {
-      border-top-right-radius: .83333vw;
-      border-bottom-right-radius: .83333vw;
+      border-top-right-radius: 3.2vw;
+      border-bottom-right-radius: 3.2vw;
       left: 0;
+      @include mq-up("tab_after") {
+        border-top-right-radius: .83333vw;
+        border-bottom-right-radius: .83333vw;
+      }
     }
     &.right {
-      border-top-left-radius: .83333vw;
-      border-bottom-left-radius: .83333vw;
+      border-top-left-radius: 3.2vw;
+      border-bottom-left-radius: 3.2vw;
       right: 0;
+      @include mq-up("tab_after") {
+        border-top-left-radius: .83333vw;
+        border-bottom-left-radius: .83333vw;
+      }
     }
   }
 }
 .P_index__works {
-  padding-top: 7.84722vw;
+  width: 89.33333vw;
+  padding-top: 18.4vw;
+  margin: 0 auto;
+  @include mq-up("tab_after") {
+    padding-top: 7.84722vw;
+  }
   .C_common__title-line {
     display: flex;
     justify-content: flex-end;
   }
 }
 .P_index__connect {
-  padding-top: 7.84722vw;
+  width: 89.33333vw;
+  padding-top: 18.4vw;
+  margin: 0 auto;
+  @include mq-up("tab_after") {
+    padding-top: 7.84722vw;
+  }
 }

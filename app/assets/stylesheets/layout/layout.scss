@@ -33,9 +33,6 @@
 .L_back-color {
   background-color: $color-background2;
 }
-.L_inner__half {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 50vw;
+.L_center {
+  margin: 0 auto;
 }
