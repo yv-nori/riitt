@@ -4,33 +4,6 @@ import {
 import {
   _doc, getElements
 } from "./utility";
-export const menuOpen = Items => {
-  let headerStatus = null;
-  const length = Items.$targets.length;
-  $(Items.$trigger).on('click', () => {
-    $(Items.$trigger).toggleClass('isActive');
-    for (let i = 0; i < length; i++) {
-      $(Items.$targets[i]).toggleClass('isOpen');
-    }
-    if ($(Items.$targets[0]).hasClass('isOpen')) {
-      Items.Activity = 'isActive'
-      if ($(Items.$targets[0]).hasClass('isMoveTop')) {
-        headerStatus = 'wasCleared'
-        for (let i = 0; i < length; i++) {
-          scrollStatus(isUp.bind(null, $(Items.$targets[i])));
-        }
-      };
-    } else {
-      Items.Activity = 'isPassive'
-      if (headerStatus = 'wasCleared') {
-        headerStatus = null;
-        for (let i = 0; i < length; i++) {
-          scrollStatus(isTop.bind(null, $(Items.$targets[i])));
-        }
-      };
-    };
-  });
-};
 export const headerItems = () => {
   const HeaderItems = {
     $trigger:
@@ -39,10 +12,19 @@ export const headerItems = () => {
     $targets: [],
     $targets_delay: [],
     Activity: 'isPassive',
-    allow: false
+    allow: false,
+    $side_oppener: _doc.getElementById('JS_scroll-change_target-H1'),
+    $side_target: _doc.getElementById('JS_side-menu_target'),
+    $side_closer: _doc.getElementById('JS_side-menu_closer')
   };
   getElements('JS_scroll-change_target-H', HeaderItems.$targets);
   getElements('JS_scroll-change-delay_target-H', HeaderItems.$targets_delay);
+  $(HeaderItems.$side_oppener).on('click', () => {
+    $(HeaderItems.$side_target).addClass('isActive');
+  });
+  $(HeaderItems.$side_closer).on('click', () => {
+    $(HeaderItems.$side_target).removeClass('isActive');
+  });
   return HeaderItems;
 }
 export const headerChangeDelay = (windowScrollTop, startPosition, Items, toTop = true) => {

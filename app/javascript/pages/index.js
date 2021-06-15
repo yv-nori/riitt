@@ -8,10 +8,10 @@ import {
   moveItems, scrollMove
 } from "../functions/move"
 import {
-  headerItems, menuOpen, headerChangeDelay
+  headerItems, headerChangeDelay
 } from "../functions/header"
 import {
-  media, changeMedia
+  media
 } from "../functions/utility"
 $(function () {
   let windowScrollTop = 0
@@ -20,7 +20,6 @@ $(function () {
   const $MoveItems = moveItems($VisitTargets);
   const $ScrollShowItems = scrollShowItems();
   visit($VisitTargets, $MoveItems, HeaderItems);
-  menuOpen(HeaderItems);
   let startPosition = 0;
   $(window).on('scroll', function () {
     windowScrollTop = $(this).scrollTop();

@@ -1,13 +1,14 @@
 <header>
   <nav class='C_header' id='JS_scroll-change_target-H0'>
     <h1 class='C_header__logo'>
-      <%= embedded_svg 'logo.svg', alt: 'riitt'%>
-      <%= link_to '', '/' , class:'U_link'%>
+      <%= link_to '/' , class:'U_link' do %>
+        <%= embedded_svg 'logo.svg', alt: 'riitt'%>
+      <% end %>
     </h1>
     <ul class='C_header__nav-lists tab_after'>
       <li class='C_header__nav-list'>
         <div class='isHide'id='JS_scroll-change-delay_target-H0'>
-          <span class=' A_text-mask' data-text='COMPANY'>COMPANY</span>
+          <span class='A_text-mask' data-text='COMPANY'>COMPANY</span>
         </div>
       </li>
       <div class='C_header__open-menu'>
@@ -62,4 +63,79 @@
     </nav>
   </nav>
   <div class='C_header__dummy'></div>
+  <div class='C_header__side-menu' id='JS_side-menu_target'>
+    <ul class='menu-lists'>
+      <li class='menu-list menu_show-list_0'>
+        <%= link_to '/' , class:'menu-link' do %>
+          <span class='A_text-mask' data-text='TOP'>TOP</span>
+        <% end %>
+      </li>
+      <li class='menu-list menu_show-list_1'>
+        <%= link_to '/' , class:'menu-link' do %>
+          <span class='A_text-mask' data-text='COMPANY'>COMPANY</span>
+        <% end %>
+      </li>
+      <li class='menu-list menu_show-list_2'>
+        <%= link_to '/' , class:'menu-link service' do %>
+          <span class='A_text-mask' data-text='SERVICE'>SERVICE</span>
+        <% end %>
+        <ul>
+          <li class='menu-list  menu_show-list_3'>
+            <%= link_to '/' , class:'menu-link list-sub A_text-mask', data:{ text:'WEB製作'} do %>
+              WEB製作
+            <% end %>
+          </li>
+          <li class='menu-list  menu_show-list_4'>
+            <%= link_to '/' , class:'menu-link list-sub A_text-mask', data:{ text:'動画撮影・編集'} do %>
+              動画撮影・編集
+            <% end %>
+          </li>
+          <li class='menu-list  menu_show-list_5'>
+            <%= link_to '/' , class:'menu-link list-sub A_text-mask', data:{ text:'印刷物製作'} do %>
+              印刷物製作
+            <% end %>
+          </li>
+          <li class='menu-list  menu_show-list_6'>
+            <%= link_to '/' , class:'menu-link list-sub A_text-mask', data:{ text:'システム開発'} do %>
+              システム開発
+            <% end %>
+          </li>
+        </ul>
+      </li>
+      <li class='menu-list menu_show-list_7'>
+        <%= link_to '/' , class:'menu-link' do %>
+          <span class='A_text-mask' data-text='WORKS'>WORKS</span>
+        <% end %>
+      </li>
+      <li class='menu-list menu_show-list_8'>
+        <%= link_to '/' , class:'menu-link' do %>
+          <span class='A_text-mask' data-text='CONTACT'>CONTACT</span>
+        <% end %>
+      </li>
+    </ul>
+    <div class='menu-bottom'>
+      <p class='menu-list menu_show-list_9'>
+        <%= link_to '/' , class:'menu-link-bottom' do %>
+          <span class='A_text-mask' data-text='PRIVACY POLICY'>PRIVACY POLICY</span>
+        <% end %>
+      </p>
+      <p class='menu-list menu_show-list_10'>
+        <%= link_to '/' , class:'menu-link-bottom' do %>
+          <span class='A_text-mask' data-text='INFOMATION SECURITY POLICY'>INFOMATION SECURITY POLICY</span>
+        <% end %>
+      </p>
+      <small class='menu-list  menu_show-list_11 copy-right'>
+        Copyright Ⓒ Riitt All Right Reserved.
+      </small>
+    </div>
+    <div class='menu-close' id='JS_side-menu_closer'>
+      <p class='A_text-mask' data-text='CLOSE'>
+        CLOSE
+      </p>
+      <div class='close'>
+        <span class='border'></span>
+        <span class='border'></span>
+      </div>
+    </div>
+  </div>
 </header>
