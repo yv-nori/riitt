@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"html-css-class-completion.CSSLanguages": [
+			"css",
+			"sass",
+			"scss"
+		],
+		"html-css-class-completion.enableEmmetSupport": true,
+		"workbench.tree.renderIndentGuides": "always",
+		"emmet.triggerExpansionOnTab": true
+	}
+}

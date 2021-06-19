@@ -1,0 +1,52 @@
+<span id='JS_sticky_trigger'></span>
+<h1 class='C_page-header'>SERVICE</h1>
+<ul class='C_service-nav' id='JS_sticky_target'>
+  <li class='tab web'>
+    <%= link_to service_web_path do %>
+      <button class='C_common__button nav'>
+        <p class='A_mask web btn-text icon-box'>
+          <span>
+            <%= embedded_svg 'icon_web.svg', class: 'icon web A_text-mask web' %>
+          </span>
+          <span class='icon-text web'>WEB</span>
+        </p>
+      </button>
+    <% end %>
+  </li>
+  <li class='tab media'>
+    <%= link_to service_media_path do %>
+      <button class='C_common__button nav'>
+        <p class='A_mask media btn-text icon-box'>
+          <span>
+            <%= embedded_svg 'icon_media.svg', class: 'icon media A_text-mask' %>
+          </span>
+          <span class='icon-text media'>MEDIA</span>
+        </p>
+      </button>
+    <% end %>
+  </li>
+  <li class='tab print'>
+    <%= link_to service_print_path do %>
+      <button class='C_common__button nav'>
+        <p class='A_mask print btn-text icon-box'>
+          <span>
+            <%= embedded_svg 'icon_print.svg', class: 'icon print A_text-mask print' %>
+          </span>
+          <span class='icon-text print'>PRINT</span>
+        </p>
+      </button>
+    <% end %>
+  </li>
+  <li class='tab system'>
+    <%= link_to service_system_path do %>
+      <button class='C_common__button nav'>
+        <p class='A_mask system btn-text icon-box'>
+          <span>
+            <%= embedded_svg 'icon_system.svg', class: 'icon system A_text-mask' %>
+          </span>
+          <span class='icon-text'>SYSTEM</span>
+        </p>
+      </button>
+    <% end %>
+  </li>
+</ul>

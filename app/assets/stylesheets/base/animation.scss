@@ -54,7 +54,7 @@
 }
 .A_hide {
   overflow: hidden;
-  .inner {
+  .hide-inner {
     transition: transform .6s cubic-bezier(.075,.82,.165,1);
     will-change: transform;
     transform: translate(0px, 120%);
@@ -133,7 +133,7 @@
     }
   }
 }
-.A_buttun-hide {
+.A_button-hide {
   will-change: opacity, transform;
   transform: scale(0,1);
   transform-origin: center left;
@@ -163,6 +163,10 @@
     -webkit-clip-path: inset(0 100% 0 0);
     clip-path: inset(0 100% 0 0);
   }
+  &.ver {
+    -webkit-clip-path: inset(100% 0 0 0);
+    clip-path: inset(100% 0 0 0);
+  }
   &.isActive {
     -webkit-clip-path: inset(0 0 0 0);
     clip-path: inset(0 0 0 0);
@@ -182,6 +186,18 @@
   &.isActive {
     clip-path: inset(0 0 0 0);
     -webkit-clip-path: inset(0 0 0 0);
+  }
+  &.A_visited {
+    clip-path: inset(0 0 0 0);
+    -webkit-clip-path: inset(0 0 0 0);
+  }
+}
+.A_opacity-hide {
+  will-change: opacity;
+  opacity: 0;
+  transition: opacity .8s cubic-bezier(.165,.84,.44,1);
+  &.isActive {
+    opacity: 1;
   }
 }
 .A_start {

@@ -17,8 +17,27 @@ $(function () {
 });
 // ページ関数
 let CurrentPath = location.pathname;
-if (CurrentPath == "/") {
-  require("../pages/index");
+if (CurrentPath == '/' ||
+  CurrentPath == '/company' ||
+  CurrentPath == '/service-web' ||
+  CurrentPath == '/service-media' ||
+  CurrentPath == '/service-print' ||
+  CurrentPath == '/service-system' ||
+  CurrentPath == '/works' ||
+  CurrentPath == '/privacy' ||
+  CurrentPath == '/infomation' ||
+  CurrentPath == '/contact') {
+  require("../functions/base");
+}
+if (CurrentPath == '/service-web' ||
+  CurrentPath == '/service-media' ||
+  CurrentPath == '/service-print' ||
+  CurrentPath == '/service-system' ||
+  CurrentPath == '/works') {
+  require("../functions/sticky");
+}
+if (CurrentPath == '/contact') {
+  require("../functions/form-check");
 }
 
 // Uncomment to copy all static images under ../images to the output folder and reference

@@ -21,7 +21,7 @@
       padding-top: 6.80556vw;
     }
   }
-  .C_common__buttun {
+  .C_common__button {
     height: 18.66667vw;
     width: 89.33333vw;
     @include mq-up("tab_after") {
@@ -58,7 +58,7 @@
         height: 0.77778vw;
         width: 6vw;
         margin-left: 5.6vw;
-        bottom: 9.5vw;
+        bottom: 7.5vw;
       }
       svg {
         width: 100%;
@@ -114,7 +114,8 @@
   }
   .arrow-circle {
     position: absolute;
-    top: 21%;
+    top: 20%;
+    height: 9vw;
     transform: rotate(-90deg);
     width: 10vw;
     left: 13%;

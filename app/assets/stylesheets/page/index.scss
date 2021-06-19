@@ -167,7 +167,7 @@
   .C_common__title-line,
   .C_common__title,
   .text,
-  .buttun {
+  .button {
     display: flex;
     justify-content: flex-start;
     @include mq-up("tab_after") {
@@ -184,7 +184,7 @@
       margin-left: 10vw;
     }
   }
-  .buttun {
+  .button {
     width: 100%;
     margin-top: 2.7vw;
   }
@@ -196,148 +196,125 @@
     margin-top: 12.91667vw;
     padding-bottom: 8.75vw;
   }
-  .C_common__title_L {
-    &.left,
-    &.right {
-      position: absolute;
-      top: -104.33333vw;
-      @include mq-up("tab_after") {
-        top: -33%;
-        width: initial;
-      }
-    }
-    &.left {
-    left: 4.26667vw;
-      @include mq-up("tab_after") {
-        left: -3.33333vw;
-      }
-    }
-    &.right {
-    right: 4.26667vw;
-      @include mq-up("tab_after") {
-        right: -3.33333vw;
-      }
-    }
-  }
   .C_common__title-line {
     padding-left: $space-side_L;
   }
-  .contents {
-    position: relative;
-    width: 100%;
-    height: 179.25333vw;
-    margin-top: 25.06667vw;
-    @include mq-up("tab_after") {
-      margin-top: 6vw;
-      height: 62.5vw;
-    }
-    &:first-of-type {
-      @include mq-up("tab_after") {
-        margin-top: 0;
-      }
-    }
-  }
-  .card {
-    padding: 0 5vw;
-    position: absolute;
-    z-index: map-get($layer, 'cover');
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 89.86667vw;
-    top: 82.72vw;
-    height: 96.53333vw;
-    @include mq-up("tab_after") {
-      width: 52.08333vw;
-      height: 29.86111vw;
-      top: 18.75vw;
-    }
-    .C_common__title_S {
-          margin-top: 0.4vw;
-    }
-    .C_common__title {
-      margin-top: 1.33333vw;
-      @include mq-up("tab_after") {
-        margin-top: 0;
-      }
-    }
-    &.left {
-      border-top-right-radius: 3.2vw;
-      border-bottom-right-radius: 3.2vw;
-      left: 0;
-      @include mq-up("tab_after") {
-        border-top-right-radius: .83333vw;
-        border-bottom-right-radius: .83333vw;
-        border-top-left-radius: .83333vw;
-        border-bottom-left-radius: .83333vw;
-        left: 6.94444vw;
-      }
-    }
-    &.right {
-      border-top-left-radius: 3.2vw;
-      border-bottom-left-radius: 3.2vw;
-      right: 0;
-      @include mq-up("tab_after") {
-        border-top-right-radius: .83333vw;
-        border-bottom-right-radius: .83333vw;
-        border-top-left-radius: .83333vw;
-        border-bottom-left-radius: .83333vw;
-        right: 6.94444vw;
-      }
-    }
-    .text {
-      line-height: 160%;
-      margin-top: 3.46667vw;
-      width: 68.26667vw;
-      @include mq-up("tab_after") {
-        margin-top: .97222vw;
-        width: 38.26389vw;
-      }
-    }
-    .C_common__buttun {
-      width: 68.26667vw;
-      margin-top: 8vw;
-      @include mq-up("tab_after") {
-        margin-top: 2.43056vw;
-        width: 16.38889vw;
-      }
-    }
-  }
-  .img-box {
-    position: absolute;
-    top: 0;
-    -o-object-fit: cover;
-    object-fit: cover;
-    z-index: 1;
-    overflow: hidden;
-    background-color: grey;
-    width: 84.26667vw;
-    height: 96vw;
-    @include mq-up("tab_after") {
-      width: 50%;
-      height: 100%;
-    }
-    &.left {
-      border-top-right-radius: 3.2vw;
-      border-bottom-right-radius: 3.2vw;
-      left: 0;
-      @include mq-up("tab_after") {
-        border-top-right-radius: .83333vw;
-        border-bottom-right-radius: .83333vw;
-      }
-    }
-    &.right {
-      border-top-left-radius: 3.2vw;
-      border-bottom-left-radius: 3.2vw;
-      right: 0;
-      @include mq-up("tab_after") {
-        border-top-left-radius: .83333vw;
-        border-bottom-left-radius: .83333vw;
-      }
-    }
-  }
+  // .contents {
+  //   position: relative;
+  //   width: 100%;
+  //   height: 179.25333vw;
+  //   margin-top: 25.06667vw;
+  //   @include mq-up("tab_after") {
+  //     margin-top: 6vw;
+  //     height: 62.5vw;
+  //   }
+  //   &:first-of-type {
+  //     @include mq-up("tab_after") {
+  //       margin-top: 0;
+  //     }
+  //   }
+  // }
+  // .card {
+  //   padding: 0 5vw;
+  //   position: absolute;
+  //   z-index: map-get($layer, 'cover');
+  //   background-color: #fff;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   width: 89.86667vw;
+  //   top: 82.72vw;
+  //   height: 96.53333vw;
+  //   @include mq-up("tab_after") {
+  //     width: 52.08333vw;
+  //     height: 29.86111vw;
+  //     top: 18.75vw;
+  //   }
+  //   .C_common__title_S {
+  //         margin-top: 0.4vw;
+  //   }
+  //   .C_common__title {
+  //     margin-top: 1.33333vw;
+  //     @include mq-up("tab_after") {
+  //       margin-top: 0;
+  //     }
+  //   }
+  //   &.left {
+  //     border-top-right-radius: 3.2vw;
+  //     border-bottom-right-radius: 3.2vw;
+  //     left: 0;
+  //     @include mq-up("tab_after") {
+  //       border-top-right-radius: .83333vw;
+  //       border-bottom-right-radius: .83333vw;
+  //       border-top-left-radius: .83333vw;
+  //       border-bottom-left-radius: .83333vw;
+  //       left: 6.94444vw;
+  //     }
+  //   }
+  //   &.right {
+  //     border-top-left-radius: 3.2vw;
+  //     border-bottom-left-radius: 3.2vw;
+  //     right: 0;
+  //     @include mq-up("tab_after") {
+  //       border-top-right-radius: .83333vw;
+  //       border-bottom-right-radius: .83333vw;
+  //       border-top-left-radius: .83333vw;
+  //       border-bottom-left-radius: .83333vw;
+  //       right: 6.94444vw;
+  //     }
+  //   }
+  //   .text {
+  //     line-height: 160%;
+  //     margin-top: 3.46667vw;
+  //     width: 68.26667vw;
+  //     @include mq-up("tab_after") {
+  //       margin-top: .97222vw;
+  //       width: 38.26389vw;
+  //     }
+  //   }
+  //   .C_common__button {
+  //     width: 68.26667vw;
+  //     margin-top: 8vw;
+  //     @include mq-up("tab_after") {
+  //       margin-top: 2.43056vw;
+  //       width: 16.38889vw;
+  //     }
+  //   }
+  // }
+  // .img-box {
+  //   position: absolute;
+  //   top: 0;
+  //   -o-object-fit: cover;
+  //   object-fit: cover;
+  //   z-index: 1;
+  //   overflow: hidden;
+  //   background-color: grey;
+  //   width: 84.26667vw;
+  //   height: 96vw;
+  //   @include mq-up("tab_after") {
+  //     width: 50%;
+  //     height: 100%;
+  //   }
+  //   &.left {
+  //     border-top-right-radius: 3.2vw;
+  //     border-bottom-right-radius: 3.2vw;
+  //     left: 0;
+  //     @include mq-up("tab_after") {
+  //       border-top-right-radius: .83333vw;
+  //       border-bottom-right-radius: .83333vw;
+  //     }
+  //   }
+  //   &.right {
+  //     border-top-left-radius: 3.2vw;
+  //     border-bottom-left-radius: 3.2vw;
+  //     right: 0;
+  //     @include mq-up("tab_after") {
+  //       border-top-left-radius: .83333vw;
+  //       border-bottom-left-radius: .83333vw;
+  //     }
+  //   }
+  // }
 }
 .P_index__works {
   width: 89.33333vw;

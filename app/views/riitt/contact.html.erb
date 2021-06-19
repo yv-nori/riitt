@@ -1,0 +1,64 @@
+<% content_for :title do %>
+  お問い合わせ｜Riitt株式会社｜コンテンツクリエイター
+<% end %>
+<%= render partial: 'shared/flash' %> 
+<%= render partial: 'shared/header' %>
+<section class='P_contact'>
+  <h1 class='C_page-header'>
+    CONTACT
+  </h1>
+  <div class="contact-body">
+    <p class='intro'>
+      項目に沿って必要事項をご入力ください。<br>
+      お問い合わせを頂戴した後、2～3営業日以内にお返事を差し上げます。営業や売り込みのご連絡は、お返事を確約いたしかねますこと、ご了承ください。
+    </p>
+    <div class='form'>
+    <%= form_with model: @contact, url: @form_items[:url], local: true do |f| %>
+      <% @form_items[:items].each do |item| %>
+        <div class="item">
+          <%#-- エラーメッセージ --%>
+          <% if item[:error_message].present? %>
+            <div class="error-alert">
+              <div class='error-message'><%= item[:error_message] %></div>
+            </div>
+          <% end %>
+          <div class="text-box">
+            <h2 class="title"><%= item[:title] %></h2>
+            <% if item[:mandatory] %>
+              <p class="mandatory">必須</p>
+            <% end %>
+          </div>
+          <%#-- フィールドオプションの作成 --%>
+          <% option = {id: item[:id]} %>
+          <% if item[:text_area] %>
+            <% option[:class] = "text-area" %>
+          <% else %>
+            <% option[:class] = "input" %>
+          <% end %>
+          <% if item[:placeholder].present? %>
+            <% option[:placeholder] = item[:placeholder] %>
+          <% end %>
+          <% if item[:maxlength].present? %>
+            <% option[:maxlength] = item[:maxlength] %>
+          <% end %>
+          <% if item[:rows].present? %>
+            <% option[:rows] = item[:rows] %>
+          <% end %>
+          <%#-- フィールドの作成 --%>
+          <% if item[:email_field] %>
+            <%= f.email_field item[:key] ,option%>
+          <% elsif item[:text_area] %>
+            <%= f.text_area item[:key] ,option%>
+          <% else %>
+            <%= f.text_field item[:key] ,option %>
+          <% end %>
+        </div>
+      <% end %>
+      <%# ENTRY %>
+      <p class='errors' id='JS_form-check_err'></p>
+      <%= f.submit "送信", class:"submit", id:'submit' %>
+      <%# /下部ボタン %>
+    <% end %>
+  </div>
+</section>
+<%= render partial: 'shared/footer' %>

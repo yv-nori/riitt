@@ -1,29 +1,39 @@
 <header>
-  <nav class='C_header' id='JS_scroll-change_target-H0'>
+  <nav class='C_header'>
     <h1 class='C_header__logo'>
       <%= link_to '/' , class:'U_link' do %>
         <%= embedded_svg 'logo.svg', alt: 'riitt'%>
       <% end %>
     </h1>
     <ul class='C_header__nav-lists tab_after'>
-      <li class='C_header__nav-list'>
-        <div class='isHide'id='JS_scroll-change-delay_target-H0'>
-          <span class='A_text-mask' data-text='COMPANY'>COMPANY</span>
-        </div>
+      <li class='C_header__nav-list company'>
+        <%= link_to company_path, class:'menu-link' do %>
+          <div class='isHide'id='JS_scroll-change-delay_target-H0'>
+            <span class='A_text-mask company' data-text='COMPANY'>COMPANY</span>
+          </div>
+        <% end %>
       </li>
       <div class='C_header__open-menu'>
         <ul class='C_header__nav-sub-lists target-ul'>
-          <li class='C_header__nav-sub-list A_mask target-li'>
-            WEB製作
+          <li class='C_header__nav-sub-list A_mask web target-li'>
+            <%= link_to service_web_path, class:'menu-link' do %>
+              WEB製作
+            <% end %>
           </li>
-          <li class='C_header__nav-sub-list A_mask target-li'>
-            動画撮影・編集
+          <li class='C_header__nav-sub-list A_mask media target-li'>
+            <%= link_to service_media_path, class:'menu-link' do %>
+              動画撮影・編集
+            <% end %>
           </li>
-          <li class='C_header__nav-sub-list A_mask target-li'>
-            印刷物製作
+          <li class='C_header__nav-sub-list A_mask print target-li'>
+            <%= link_to service_print_path, class:'menu-link' do %>
+              印刷物製作
+            <% end %>
           </li>
-          <li class='C_header__nav-sub-list A_mask target-li'>
-            システム開発
+          <li class='C_header__nav-sub-list A_mask system target-li'>
+            <%= link_to service_system_path, class:'menu-link' do %>
+              システム開発
+            <% end %>
           </li>
         </ul>
         <li class='C_header__nav-list sub-menu'>
@@ -35,27 +45,31 @@
           </div>
         </li>
       </div>
-      <li class='C_header__nav-list'>
-        <div class='isHide'id='JS_scroll-change-delay_target-H2'>
-          <span class='A_text-mask' data-text='WORKS'>WORKS</span>
-        </div>
+      <li class='C_header__nav-list works'>
+        <%= link_to works_path, class:'menu-link' do %>
+          <div class='isHide'id='JS_scroll-change-delay_target-H2'>
+            <span class='A_text-mask works' data-text='WORKS'>WORKS</span>
+          </div>
+        <% end %>
       </li>
-      <li class='C_header__nav-list'>
-        <div class='isHide'id='JS_scroll-change-delay_target-H3'>
-          <span class='A_text-mask' data-text='CONTACT'>CONTACT</span>
-        </div>
+      <li class='C_header__nav-list contact'>
+        <%= link_to contact_path, class:'menu-link' do %>
+          <div class='isHide'id='JS_scroll-change-delay_target-H3'>
+            <span class='A_text-mask contact' data-text='CONTACT'>CONTACT</span>
+          </div>
+        <% end %>
       </li>
     </ul>
-    <nav class='C_header__opener isMoveTop' id='JS_scroll-change_target-H1'>
+    <nav class='C_header__opener isMoveTop' id='JS_scroll-change_target-H0'>
       <div class='C_header__opener__text'>
-        <div class='isHide isMoveTop'id='JS_scroll-change_target-H2'>
+        <div class='isHide isMoveTop'id='JS_scroll-change_target-H1'>
           <p class='A_text-mask' data-text='MENU'>MENU</p>
         </div>
       </div>
       <button class='C_header__opener__icon'>
         <div class='icon_bg'></div>
-        <span class='icon_dot --ver-up isMoveTop' id='JS_scroll-change_target-H3'></span>
-        <span class='icon_dot --ver-down isMoveTop' id='JS_scroll-change_target-H4'></span>
+        <span class='icon_dot --ver-up isMoveTop' id='JS_scroll-change_target-H2'></span>
+        <span class='icon_dot --ver-down isMoveTop' id='JS_scroll-change_target-H3'></span>
         <span class='icon_dot --hor-left'></span>
         <span class='icon_dot --hor-right'></span>
         <span class='icon_dot --center'></span>
@@ -65,63 +79,63 @@
   <div class='C_header__dummy'></div>
   <div class='C_header__side-menu' id='JS_side-menu_target'>
     <ul class='menu-lists'>
-      <li class='menu-list menu_show-list_0'>
+      <li class='menu-list menu_show-list_0 top'>
         <%= link_to '/' , class:'menu-link' do %>
-          <span class='A_text-mask' data-text='TOP'>TOP</span>
+          <span class='A_text-mask top' data-text='TOP'>TOP</span>
         <% end %>
       </li>
-      <li class='menu-list menu_show-list_1'>
-        <%= link_to '/' , class:'menu-link' do %>
-          <span class='A_text-mask' data-text='COMPANY'>COMPANY</span>
+      <li class='menu-list menu_show-list_1 company'>
+        <%= link_to company_path, class:'menu-link' do %>
+          <span class='A_text-mask company' data-text='COMPANY'>COMPANY</span>
         <% end %>
       </li>
       <li class='menu-list menu_show-list_2'>
-        <%= link_to '/' , class:'menu-link service' do %>
-          <span class='A_text-mask' data-text='SERVICE'>SERVICE</span>
-        <% end %>
+        <div class='menu-link service'>
+          <span class='A_text-mask service' data-text='SERVICE'>SERVICE</span>
+        </div>
         <ul>
-          <li class='menu-list  menu_show-list_3'>
-            <%= link_to '/' , class:'menu-link list-sub A_text-mask', data:{ text:'WEB製作'} do %>
+          <li class='menu-list web menu_show-list_3'>
+            <%= link_to service_web_path , class:'menu-link list-sub A_text-mask web', data:{ text:'WEB製作'} do %>
               WEB製作
             <% end %>
           </li>
-          <li class='menu-list  menu_show-list_4'>
-            <%= link_to '/' , class:'menu-link list-sub A_text-mask', data:{ text:'動画撮影・編集'} do %>
+          <li class='menu-list media menu_show-list_4'>
+            <%= link_to service_media_path , class:'menu-link list-sub A_text-mask media', data:{ text:'動画撮影・編集'} do %>
               動画撮影・編集
             <% end %>
           </li>
-          <li class='menu-list  menu_show-list_5'>
-            <%= link_to '/' , class:'menu-link list-sub A_text-mask', data:{ text:'印刷物製作'} do %>
+          <li class='menu-list print menu_show-list_5'>
+            <%= link_to service_print_path , class:'menu-link list-sub A_text-mask print', data:{ text:'印刷物製作'} do %>
               印刷物製作
             <% end %>
           </li>
-          <li class='menu-list  menu_show-list_6'>
-            <%= link_to '/' , class:'menu-link list-sub A_text-mask', data:{ text:'システム開発'} do %>
+          <li class='menu-list system menu_show-list_6'>
+            <%= link_to service_system_path , class:'menu-link list-sub A_text-mask system', data:{ text:'システム開発'} do %>
               システム開発
             <% end %>
           </li>
         </ul>
       </li>
-      <li class='menu-list menu_show-list_7'>
-        <%= link_to '/' , class:'menu-link' do %>
-          <span class='A_text-mask' data-text='WORKS'>WORKS</span>
+      <li class='menu-list menu_show-list_7 works'>
+        <%= link_to works_path , class:'menu-link' do %>
+          <span class='A_text-mask works' data-text='WORKS'>WORKS</span>
         <% end %>
       </li>
-      <li class='menu-list menu_show-list_8'>
-        <%= link_to '/' , class:'menu-link' do %>
-          <span class='A_text-mask' data-text='CONTACT'>CONTACT</span>
+      <li class='menu-list menu_show-list_8 contact'>
+        <%= link_to contact_path , class:'menu-link' do %>
+          <span class='A_text-mask contact' data-text='CONTACT'>CONTACT</span>
         <% end %>
       </li>
     </ul>
     <div class='menu-bottom'>
-      <p class='menu-list menu_show-list_9'>
-        <%= link_to '/' , class:'menu-link-bottom' do %>
-          <span class='A_text-mask' data-text='PRIVACY POLICY'>PRIVACY POLICY</span>
+      <p class='menu-list menu_show-list_9 privacy'>
+        <%= link_to privacy_path , class:'menu-link-bottom' do %>
+          <span class='A_text-mask privacy' data-text='PRIVACY POLICY'>PRIVACY POLICY</span>
         <% end %>
       </p>
-      <p class='menu-list menu_show-list_10'>
-        <%= link_to '/' , class:'menu-link-bottom' do %>
-          <span class='A_text-mask' data-text='INFOMATION SECURITY POLICY'>INFOMATION SECURITY POLICY</span>
+      <p class='menu-list menu_show-list_10 infomation'>
+        <%= link_to infomation_path , class:'menu-link-bottom' do %>
+          <span class='A_text-mask infomation' data-text='INFOMATION SECURITY POLICY'>INFOMATION SECURITY POLICY</span>
         <% end %>
       </p>
       <small class='menu-list  menu_show-list_11 copy-right'>

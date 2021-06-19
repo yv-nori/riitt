@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title><%= content_for?(:title) ? yield(:title) : "Riitt株式会社 – WEB開発・動画撮影・ロゴ・ポスター製作で、思いつきをカタチに。"%></title>
+    
     <meta name="keywords" content="IT,ホームページ,Web製作,貝塚市,大阪府,関西,動画編集,HP">
     <title>Riitt</title>
     <%= csrf_meta_tags %>
@@ -13,7 +14,7 @@
     <%= javascript_pack_tag 'application' %>
   </head>
 
-  <body>
+  <body id='JS_page'>
     <div class="A_start" id='JS_start'>
       <div id='JS_start_logo' class='logo'>
         <%= embedded_svg 'logo.svg', alt: 'riitt'%>

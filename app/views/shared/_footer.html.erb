@@ -1,12 +1,14 @@
 <footer class='C_footer'>
   <div class='top'>
-    <button class='C_common__buttun'>
-      <p class='A_mask no-border'>
-        CONTACT
-        <span>
-          <%= embedded_svg 'arrow-right.svg', class: 'arrow-left A_text-mask' %>
-        </span>
-      </p>
+    <button class='C_common__button contact'>
+      <%= link_to contact_path do %>
+        <p class='A_mask contact no-border btn-text'>
+          CONTACT
+          <span>
+            <%= embedded_svg 'arrow-right.svg', class: 'arrow-left A_text-mask contact' %>
+          </span>
+        </p>
+      <% end %>
     </button>
   </div>
   <div class='bottom'>
@@ -14,9 +16,19 @@
       <%= embedded_svg 'logo-white.svg', alt: 'riitt'%>
       <%= link_to '', '/' , class:'U_link'%>
     </div>
-    <p class='copy-right'>Copyright Ⓒ Riitt All Right Reserved.</p>
-    <h4 class='privacy A_text-mask white' data-text='PRIVACY POLICY'>PRIVACY POLICY</h4>
-    <h4 class='infomation A_text-mask white' data-text='INFORMATION SECURITY POLICY'>INFORMATION SECURITY POLICY</h4>
+    <p class='copy-right'>
+      Copyright Ⓒ Riitt All Right Reserved.
+    </p>
+    <h4 class='privacy A_text-mask white' data-text='PRIVACY POLICY'>
+      <%= link_to privacy_path do %>
+        PRIVACY POLICY
+      <% end %>
+    </h4>
+    <h4 class='infomation A_text-mask white' data-text='INFORMATION SECURITY POLICY'>
+      <%= link_to infomation_path do %>
+        INFORMATION SECURITY POLICY
+      <% end %>
+    </h4>
   </div>
   <%= embedded_svg 'deco_half-circle.svg', class: 'arrow-circle tab_after' %>
   <%= embedded_svg 'deco_infinity-hor.svg', class: 'infinity tab_after' %>

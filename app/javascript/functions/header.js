@@ -13,9 +13,10 @@ export const headerItems = () => {
     $targets_delay: [],
     Activity: 'isPassive',
     allow: false,
-    $side_oppener: _doc.getElementById('JS_scroll-change_target-H1'),
+    $side_oppener: _doc.getElementById('JS_scroll-change_target-H0'),
     $side_target: _doc.getElementById('JS_side-menu_target'),
-    $side_closer: _doc.getElementById('JS_side-menu_closer')
+    $side_closer: _doc.getElementById('JS_side-menu_closer'),
+    $page_target: _doc.getElementById('JS_page'),
   };
   getElements('JS_scroll-change_target-H', HeaderItems.$targets);
   getElements('JS_scroll-change-delay_target-H', HeaderItems.$targets_delay);
@@ -27,10 +28,16 @@ export const headerItems = () => {
   });
   return HeaderItems;
 }
+export const headerPage = Items => {
+  let CurrentPath = location.pathname;
+  console.log(CurrentPath.indexOf('/'))
+  let myPath = CurrentPath.slice(CurrentPath.indexOf('/') + 1);
+  $(Items).addClass(myPath + '_Now');
+}
 export const headerChangeDelay = (windowScrollTop, startPosition, Items, toTop = true) => {
   let length = Items.$targets.length;
   let length_delay = Items.$targets_delay.length;
-
+  console.log(Items.$targets)
   const delayTop = () => {
     for (let i = 0; i < length_delay; i++) {
       if (toTop) {
@@ -66,6 +73,7 @@ export const headerChangeDelay = (windowScrollTop, startPosition, Items, toTop =
         }, 1000);
       break;
       case 'toUp':
+
         for (let i = 0; i < length; i++) {
           scrollStatus(isUp.bind(null, $(Items.$targets[i])));
         }

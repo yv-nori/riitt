@@ -38,7 +38,7 @@
   .thin{
     background-color: $color-accent4;
   }
-  .deco0 {
+  .deco_0 {
     will-change: transform;
     top: -5vw;
     left: 69vw;
@@ -51,7 +51,7 @@
       height: 8.77778vw;
     }
   }
-  .deco1 {
+  .deco_1 {
     will-change: transform;
     top: -9.6vw;
     left: -9vw;
@@ -64,7 +64,7 @@
       height: 8.77778vw;
     }
   }
-  .deco2 {
+  .deco_2 {
     will-change: transform;
     top: 211vw;
     left: -5vw;
@@ -77,7 +77,7 @@
       height: 5.77778vw;
     }
   }
-  .deco3 {
+  .deco_3 {
     will-change: transform;
     top: 133vw;
     left: 89vw;
@@ -90,7 +90,7 @@
       height: 15.77778vw;
     }
   }
-  .deco4 {
+  .deco_4 {
     will-change: transform;
     top: 94vw;
     left: -3vw;
@@ -103,7 +103,7 @@
       height: 9.77778vw;
     }
   }
-  .deco5 {
+  .deco_5 {
     will-change: transform;
     top: 189vw;
     left: 87vw;
@@ -111,12 +111,12 @@
     height: 5.6vw;
     @include mq-up("tab_after") {
       top: 5.2%;
-      left: 38%;
+      left: 55%;
       width: 2.77778vw;
       height: 2.77778vw;
     }
   }
-  .deco6 {
+  .deco_6 {
     will-change: transform;
     top: 199vw;
     left: 87vw;
@@ -124,12 +124,12 @@
     height: 20.77778vw;
     @include mq-up("tab_after") {
       top: 5.9%;
-      left: 38%;
+      left: 55%;
       width: 2.77778vw;
       height: 11.77778vw;
     }
   }
-  .deco7 {
+  .deco_7 {
     will-change: transform;
     top: 213vw;
     left: 78.7vw;
@@ -137,12 +137,12 @@
     height: 24.77778vw;
     @include mq-up("tab_after") {
       top: 7.2%;
-      left: 32.5%;
+      left: 49.5%;
       width: 13.77778vw;
       height: 11.77778vw;
     }
   }
-  .deco8 {
+  .deco_8 {
     will-change: transform;
     top: 266.5vw;
     left: 86vw;
@@ -150,12 +150,12 @@
     height: 31.4vw;
     @include mq-up("tab_after") {
       top: 4.7%;
-      left: 43.5%;
+      left: 59.5%;
       width: 2.77778vw;
       height: 9.77778vw;
     }
   }
-  .deco9 {
+  .deco_9 {
     will-change: transform;
     top: -4vw;
     right: 39vw;
@@ -168,7 +168,7 @@
       height: 10.77778vw;
     }
   }
-  .deco10 {
+  .deco_10 {
     will-change: transform;
     top: 318vw;
     width: 22.77778vw;
@@ -183,7 +183,7 @@
       left: -6%;
     }
   }
-  .deco11 {
+  .deco_11 {
     will-change: transform;
     top: 278.5vw;
     width: 7vw;
@@ -196,7 +196,7 @@
       left: 27%;
     }
   }
-  .deco12 {
+  .deco_12 {
     will-change: transform;
     top: 378vw;
     width: 5vw;
@@ -209,7 +209,7 @@
       left: 43%;
     }
   }
-  .deco13 {
+  .deco_13 {
     will-change: transform;
     top: 491vw;
     width: 5vw;
@@ -222,7 +222,7 @@
       left: 48%;
     }
   }
-  .deco14 {
+  .deco_14 {
     will-change: transform;
     top: 295vw;
     width: 5vw;
@@ -235,7 +235,7 @@
       right: -1%;
     }
   }
-  .deco15 {
+  .deco_15 {
     will-change: transform;
     top: 866vw;
     width: 6vw;
@@ -248,7 +248,7 @@
       right: 83%;
     }
   }
-  .deco16 {
+  .deco_16 {
     will-change: transform;
     top: 901vw;
     width: 6vw;
@@ -261,7 +261,7 @@
       right: 75.7%;
     }
   }
-  .deco17 {
+  .deco_17 {
     will-change: transform;
     top: 882vw;
     width: 5vw;
@@ -274,7 +274,7 @@
       right: 92%;
     }
   }
-  .deco18 {
+  .deco_18 {
     will-change: transform;
     top: 302vw;
     left: 88vw;
@@ -287,7 +287,7 @@
       height: 2.77778vw;
     }
   }
-  .deco19 {
+  .deco_19 {
     will-change: transform;
     top: 596vw;
     left: 82vw;
@@ -300,7 +300,7 @@
       height: 11.77778vw;
     }
   }
-  .deco20 {
+  .deco_20 {
     will-change: transform;
     top: 900vw;
     left: 95vw;
@@ -315,7 +315,7 @@
       height: 11.77778vw;
     }
   }
-  .deco21 {
+  .deco_21 {
     will-change: transform;
     top: 1061vw;
     width: 5vw;
@@ -328,7 +328,7 @@
       right: 6.7%;
     }
   }
-  .deco22 {
+  .deco_22 {
     will-change: transform;
     top: 1208vw;
     width: 5vw;
@@ -341,7 +341,7 @@
       right: 1%;
     }
   }
-  .deco23 {
+  .deco_23 {
     will-change: transform;
     top: 1646vw;
     width: 5vw;
@@ -354,7 +354,7 @@
       right: 81%;
     }
   }
-  .deco24 {
+  .deco_24 {
     will-change: transform;
     top: 2272vw;
     width: 5vw;
@@ -367,7 +367,7 @@
       right: 81%;
     }
   }
-  .deco25 {
+  .deco_25 {
     will-change: transform;
     top: 1914vw;
     width: 5vw;
@@ -380,7 +380,7 @@
       right: 75%;
     }
   }
-  .deco26 {
+  .deco_26 {
     will-change: transform;
     top: 2033vw;
     width: 5vw;
@@ -393,7 +393,7 @@
       right: 33%;
     }
   }
-  .deco27 {
+  .deco_27 {
     will-change: transform;
     top: 1678vw;
     width: 6vw;
@@ -406,7 +406,7 @@
       right: 18%;
     }
   }
-  .deco28 {
+  .deco_28 {
     will-change: transform;
     top: 2275vw;
     width: 5vw;
@@ -419,7 +419,7 @@
       right: 13%;
     }
   }
-  .deco29 {
+  .deco_29 {
     will-change: transform;
     top: 2305vw;
     width: 5vw;
@@ -432,7 +432,7 @@
       right: 13%;
     }
   }
-  .deco30 {
+  .deco_30 {
     will-change: transform;
     top: 3322vw;
     width: 5vw;
@@ -445,7 +445,7 @@
       right: 41%;
     }
   }
-  .deco31 {
+  .deco_31 {
     will-change: transform;
     top: 3314vw;
     width: 5vw;
@@ -458,7 +458,7 @@
       right: 41%;
     }
   }
-  .deco32 {
+  .deco_32 {
     will-change: transform;
     top: 2790vw;
     width: 6vw;
@@ -471,7 +471,7 @@
       right: 63%;
     }
   }
-  .deco33 {
+  .deco_33 {
     will-change: transform;
     top: 2944vw;
     width: 6vw;
@@ -484,7 +484,7 @@
       right: 71%;
     }
   }
-  .deco34 {
+  .deco_34 {
     will-change: transform;
     top: 2416vw;
     width: 7vw;
@@ -499,7 +499,7 @@
       right: 19%;
     }
   }
-  .deco35 {
+  .deco_35 {
     will-change: transform;
     top: 3361vw;
     width: 6vw;
@@ -512,7 +512,7 @@
       right: 13%;
     }
   }
-  .deco36 {
+  .deco_36 {
     will-change: transform;
     top: 3383vw;
     width: 6vw;
@@ -525,7 +525,7 @@
       left: -1%;
     }
   }
-  .deco37 {
+  .deco_37 {
     will-change: transform;
     top: 3307vw;
     width: 5vw;
@@ -538,7 +538,7 @@
       left: 4%;
     }
   }
-  .deco38 {
+  .deco_38 {
     will-change: transform;
     top: 3598vw;
     width: 5vw;
@@ -551,7 +551,7 @@
       left: 4%;
     }
   }
-  .deco39 {
+  .deco_39 {
     will-change: transform;
     top: 3036vw;
     width: 7vw;
@@ -564,7 +564,7 @@
       right: 8%;
     }
   }
-  .deco40 {
+  .deco_40 {
     will-change: transform;
     top: 3599vw;
     width: 6vw;
@@ -577,7 +577,7 @@
       right: 3%;
     }
   }
-  .deco41 {
+  .deco_41 {
     will-change: transform;
     top: 3039vw;
     width: 7vw;
@@ -590,7 +590,7 @@
       left: 11%;
     }
   }
-  .deco42 {
+  .deco_42 {
     will-change: transform;
     top: 3939vw;
     width: 8vw;
@@ -603,7 +603,7 @@
       left: 16%;
     }
   }
-  .deco43 {
+  .deco_43 {
     will-change: transform;
     top: 4109vw;
     width: 6vw;

@@ -1,24 +1,25 @@
 import {
   scrollShow, scrollShowItems, resetPositions
-} from "../functions/scroll"
+} from "./scroll"
 import {
   visit, visitTargets
-} from "../functions/visit"
+} from "./visit"
 import {
   moveItems, scrollMove
-} from "../functions/move"
+} from "./move"
 import {
-  headerItems, headerChangeDelay
-} from "../functions/header"
+  headerItems, headerChangeDelay, headerPage
+} from "./header"
 import {
   media
-} from "../functions/utility"
+} from "./utility"
 $(function () {
   let windowScrollTop = 0
   const HeaderItems = headerItems();
   const $VisitTargets = visitTargets();
   const $MoveItems = moveItems($VisitTargets);
   const $ScrollShowItems = scrollShowItems();
+  headerPage(HeaderItems.$page_target);
   visit($VisitTargets, $MoveItems, HeaderItems);
   let startPosition = 0;
   $(window).on('scroll', function () {

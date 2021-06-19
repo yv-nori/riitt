@@ -1,0 +1,236 @@
+body {
+  &._Now {
+    .menu-list.top {
+      pointer-events: none;
+      cursor: default;
+    }
+    .A_text-mask.top {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+    }
+  }
+  &.service-web_Now {
+    .menu-list.service {
+      pointer-events: none;
+      cursor: default;
+    }
+    .A_text-mask.service {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+    }
+    .menu-list.web{
+      pointer-events: none;
+      cursor: default;
+    }
+    .A_text-mask.web {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+    }
+    .A_mask.web {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      pointer-events: none;
+      cursor: default;
+      color: white;
+      font-weight: 700;
+      path {
+        fill: white;
+      }
+    }
+    .tab.web {
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+  &.service-media_Now {
+    .menu-list.service {
+      pointer-events: none;
+      cursor: default;
+    }
+    .A_text-mask.service {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+    }
+    .menu-list.media{
+      pointer-events: none;
+      cursor: default;
+    }
+    .A_text-mask.media {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+    }
+    .A_mask.media {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      pointer-events: none;
+      cursor: default;
+      color: white;
+      font-weight: 700;
+      path {
+        fill: white;
+      }
+    }
+    .tab.media {
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+  &.service-print_Now {
+    .menu-list.service {
+      pointer-events: none;
+      cursor: default;
+    }
+    .A_text-mask.service {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+    }
+    .menu-list.print{
+      pointer-events: none;
+      cursor: default;
+    }
+    .A_text-mask.print {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+    }
+    .A_mask.print {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      pointer-events: none;
+      cursor: default;
+      color: white;
+      font-weight: 700;
+      path {
+        fill: white;
+      }
+    }
+    .tab.print {
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+  &.service-system_Now {
+    .menu-list.service {
+      pointer-events: none;
+      cursor: default;
+    }
+    .A_text-mask.service {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+    }
+    .menu-list.system{
+      pointer-events: none;
+      cursor: default;
+    }
+    .A_text-mask.system {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+    }
+    .A_mask.system {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      pointer-events: none;
+      cursor: default;
+      color: white;
+      font-weight: 700;
+      path {
+        fill: white;
+      }
+    }
+    .tab.system {
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+  &.company_Now {
+    .menu-list.company {
+      pointer-events: none;
+      cursor: default;
+    }
+    .A_text-mask.company {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+    }
+    .C_header__nav-list.company {
+      pointer-events: none;
+      cursor: default;
+    }
+    .A_text-mask.company {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+    }
+  }
+  &.contact_Now {
+    .menu-list.contact{
+      pointer-events: none;
+      cursor: default;
+    }
+    .A_text-mask.contact {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+    }
+    .C_header__nav-list.contact {
+      pointer-events: none;
+      cursor: default;
+    }
+    .A_text-mask.contact {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+    }
+    .A_mask.contact {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      color: white;
+      font-weight: 700;
+      path {
+        fill: white;
+      }
+    }
+    .C_common__button {
+      pointer-events: none;
+      cursor: default;
+
+    }
+  }
+  &.works_Now {
+    .menu-list.works{
+      pointer-events: none;
+      cursor: default;
+    }
+    .A_text-mask.works {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+    }
+    .C_header__nav-list.works {
+      pointer-events: none;
+      cursor: default;
+    }
+    .A_text-mask.works {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+    }
+  }
+  &.privacy_Now {
+    .menu-list.privacy {
+      pointer-events: none;
+      cursor: default;
+    }
+    .A_text-mask.privacy {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+        pointer-events: none;
+      cursor: default;
+    }
+  }
+  &.infomation_Now {
+    .menu-list.infomation {
+      pointer-events: none;
+      cursor: default;
+    }
+    .A_text-mask.infomation {
+      -webkit-animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      animation: mask .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+}

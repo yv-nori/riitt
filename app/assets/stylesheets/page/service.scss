@@ -1,0 +1,319 @@
+.P_service {
+  .C_common__title-line {
+    font-size: 3.73333vw;
+    width: 100%;
+    @include mq-up("tab_after") {
+      font-size: 1.73611vw;
+    }
+  }
+  .type {
+    .C_common__title-line {
+      margin-top: 10vw;
+      margin-left: 10vw;
+    }
+  }
+  .back-ground {
+    height: 354vw;
+    top: 163vw;
+    background: #f1eee7;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: map-get($layer, "back-ground");
+    @include mq-up("tab_after") {
+      height: 155vw;
+      top: 45vw;
+    }
+    &.media {
+      height: 861vw;
+      @include mq-up("tab_after") {
+        height: 308vw;
+      }
+    }
+    &.print {
+          height: 487vw;
+      @include mq-up("tab_after") {
+        height: 180vw;
+      }
+    }
+    &.system {
+          height: 76vw;
+      @include mq-up("tab_after") {
+        height: 26vw;
+      }
+    }
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #fff;
+    border-radius: 3.2vw;
+    width: 90vw;
+    margin-left: auto;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 48vw;
+    @include mq-up("tab_after") {
+      width: 90.76389vw;
+      border-radius: 0.83333vw;
+      height: 40vh;
+      margin-top: 12vw;
+    }
+    .title {
+      font-family: "DINPro-Medium";
+      line-height: 82%;
+      letter-spacing: -0.035em;
+      position: absolute;
+      font-size: 21.33333vw;
+      left: -5.6vw;
+      top: -12vw;
+      @include mq-up("tab_after") {
+        font-size: 10.41667vw;
+        left: -4.02778vw;
+        top: -5.76389vw;
+      }
+    }
+    .statement {
+      margin-top: 50vw;
+      margin-left: 10vw;
+      margin-right: 10vw;
+      margin-bottom: 9vw;
+      @include mq-up("tab_after") {
+        margin-left: 9.30556vw;
+        margin-top: 2.3vw;
+        margin-bottom: 0;
+      }
+    }
+    .C_common__title-line {
+      font-family: "honoka-maru";
+      margin-top: 12.26667vw;
+      @include mq-up("tab_after") {
+        margin-top: 8.54167vw;
+      }
+    }
+    .copy {
+      margin-top: 7.2vw;
+      font-size: 5.6vw;
+      font-weight: 500;
+      line-height: 150%;
+      text-align: justify;
+      font-feature-settings: "palt" on;
+      @include mq-up("tab_after") {
+        margin-top: 2.98611vw;
+        font-size: 2.22222vw;
+      }
+    }
+    .text {
+      text-align: justify;
+      font-feature-settings: "palt" on;
+      margin-top: 6.13333vw;
+      font-size: 3.73333vw;
+      line-height: 210%;
+      @include mq-up("tab_after") {
+        margin-top: 0.97222vw;
+        font-size: 1.04167vw;
+        width: 45.76389vw;
+        line-height: 215%;
+      }
+    }
+    .img-position {
+      position: absolute;
+      overflow: hidden;
+      top: 10%;
+      left: 29%;
+      width: 40vw;
+      height: 40vw;
+      @include mq-up("tab_after") {
+        width: 14vw;
+        height: 14vw;
+        top: 50%;
+        left: 76%;
+      }
+      .img {
+        background-color: grey;
+        border-radius: 100%;
+        width: 40vw;
+        height: 40vw;
+      }
+    }
+  }
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 80vw;
+    margin-top: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+    @include mq-up("tab_after") {
+      margin-top: 18vw;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80vw;
+    }
+    .head {
+      display: flex;
+      flex-wrap: wrap;
+      @include mq-up("tab_after") {
+        flex-wrap: nowrap;
+      }
+      .C_common__title-line {
+        margin-top: 0.76389vw;
+        @include mq-up("tab_after") {
+          margin-top: initial;
+          width: 52%;
+        }
+      }
+      .statement {
+        margin-top: 40vw;
+        @include mq-up("tab_after") {
+          margin-top: 0;
+        }
+        .copy {
+          line-height: 150%;
+          text-align: justify;
+          font-feature-settings: "palt" on;
+          font-size: 5.2vw;
+          @include mq-up("tab_after") {
+            font-size: 2.22222vw;
+          }
+        }
+        .text {
+          margin-top: 1.2vw;
+          width: 100%;
+          font-size: 3.8vw;
+          line-height: 215%;
+          text-align: justify;
+          font-feature-settings: "palt" on;
+          @include mq-up("tab_after") {
+            font-size: 1.04167vw;
+          }
+        }
+      }
+    }
+    .img-pic {
+      width: 30vw;
+      height: 30vw;
+      position: absolute;
+      top: 11vw;
+      left: 50%;
+      transform: translateX(-50%);
+      @include mq-up("tab_after") {
+        position: initial;
+        left: initial;
+        top: initial;
+        transform: initial;
+        margin-top: 4vw;
+        width: 24vw;
+        height: 24vw;
+      }
+    }
+  }
+  .C_common__contents {
+    .card {
+      height: 60vw;
+      @include mq-up("tab_after") {
+        height: 27vw;
+      }
+    }
+  }
+  .flow {
+    margin-bottom: 20vw;
+    margin-top: 20vw;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    @include mq-up("tab_after") {
+      margin-top: 10vw;
+    }
+    .body {
+      margin-top: 5vw;
+      .item {
+        will-change: opacity, transform;
+        transform: translate(0px, 0px);
+        opacity: 1;
+        position: relative;
+        display: flex;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid #d1d1d1;
+        padding-bottom: 6vw;
+        padding-top: 3vw;
+        @include mq-up("tab_after") {
+          flex-direction: row;
+          padding-bottom: 3vw;
+        }
+        &.first {
+          border-top: 1px solid #d1d1d1;
+        }
+        .title {
+          display: flex;
+          height: 100%;
+          line-height: 215%;
+          font-weight: 700;
+          font-feature-settings: "palt" on;
+          text-align: center;
+          align-items: center;
+          font-weight: 700;
+          font-size: 3.25vw;
+          @include mq-up("tab_after") {
+            width: 18.125vw;
+            font-size: 1.25vw;
+            display: flex;
+            font-weight: initial;
+            text-align: inherit;
+          }
+        }
+        .content {
+          font-size: 3vw;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          line-height: 215%;
+          text-align: justify;
+          font-feature-settings: "palt" on;
+          line-height: 200%;
+          font-weight: initial;
+          @include mq-up("tab_after") {
+            font-size: 1.04167vw;
+            margin-left: 2.22222vw;
+            width: 50.90278vw;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .works {
+    width: 89.33333vw;
+    padding-top: 18.4vw;
+    margin: 0 auto;
+    @include mq-up("tab_after") {
+      padding-top: 15vw;
+    }
+    .more-works {
+      margin-top: 10vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .text {
+        font-weight: 700;
+        line-height: 150%;
+        text-align: justify;
+        font-feature-settings: "palt" on;
+        text-align: center;
+        font-size: 6vw;
+        @include mq-up("tab_after") {
+          font-size: 2.22222vw;
+        }
+      }
+      .button {
+        margin-top: 2.84722vw;
+      }
+    }
+  }
+}

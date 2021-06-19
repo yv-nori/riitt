@@ -1,0 +1,142 @@
+#JS_sticky_trigger {
+  position: absolute;
+  z-index: map-get($layer, 'back-ground');
+  pointer-events: none;
+  top: 24vw;
+  @include mq-up("tab_after") {
+    top: 13vw;
+  }
+}
+.C_service-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  top: 44vw;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  will-change: position top width;
+  transition: width .2s cubic-bezier(.165,.84,.44,1);
+  @include mq-up("tab_after") {
+    top: 17vw;
+    width: 35vw;
+  }
+  .C_common__button {
+    &.nav {
+      margin: 0;
+      width: 40vw;
+      @include mq-up("tab_after") {
+        width: 16.38889vw;
+        height: 3.47222vw;
+        margin: 0;
+      }
+    }
+    .icon {
+      transition: transform .8s cubic-bezier(.075,.82,.165,1) .4s;
+      height: auto;
+      min-height: 1px;
+      margin-left: 4vw;
+      &.web {
+        width: 6vw;
+        padding-top: 1.7vw;
+        @include mq-up("tab_after") {
+          width: 2.5vw;
+          padding-top: .5vw;
+        }
+      }
+      &.media {
+        width: 6vw;
+        @include mq-up("tab_after") {
+          width: 2.6vw;
+          padding-top: 0.4vw;
+        }
+      }
+      &.print {
+        width: 3.8vw;
+        padding-top: 1.8vw;
+        margin-left: 5vw;
+        @include mq-up("tab_after") {
+        width: 1.6vw;
+        padding-top: 0.4vw;
+        margin-left: 2vw;
+        }
+      }
+      &.system {
+        width: 6vw;
+        padding-top: 1.7vw;
+        @include mq-up("tab_after") {
+          width: 2.5vw;
+          padding-top: .5vw;
+        }
+      }
+      @include mq-up("tab_after") {
+        margin-left: 1.6vw;
+        width: 1.63403vw;
+      }
+    }
+    .btn-text {
+      &.icon-box {
+        justify-content: flex-start;
+      }
+      .icon-text {
+        width: 60%;
+        text-align: center;
+        &.web {
+          width: 55%;
+          @include mq-up("tab_after") {
+            width: 53%;
+          }
+        }
+        &.media {
+          @include mq-up("tab_after") {
+            width: 59%;
+          }
+        }
+        &.print {
+          width: 67.5%;
+          @include mq-up("tab_after") {
+            width: 61%;
+          }
+        }
+        &.system {
+          @include mq-up("tab_after") {
+            width: 63%;
+          }
+        }
+        @include mq-up("tab_after") {
+          width: 66%;
+        }
+      }
+    }
+  }
+  &.isSticky {
+    position: fixed;
+    top: 8%;
+    @include mq-up("tab_after") {
+      top: 5%;
+    }
+    .C_common__button {
+      height: 7.36111vw;
+      @include mq-up("tab_after") {
+        height: 2.36111vw;
+      }
+    }
+    @include mq-up("tab_after") {
+      width: 70vw;
+      .tab {
+        &:nth-child(n + 3) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .tab {
+    transition: height .35s cubic-bezier(.165,.84,.44,1), margin-top .2s cubic-bezier(.165,.84,.44,1);
+    &:nth-child(n + 3) {
+      will-change: margin-top;
+      margin-top: 2vw;
+    }
+  }
+}

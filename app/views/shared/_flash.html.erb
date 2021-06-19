@@ -1,0 +1,17 @@
+<% flash.each do |key, value| %>
+  <p class="flash__<%= key %>">
+    <%= value %>
+  </p>
+  <script>
+    window.setTimeout(( ) =>{
+      $(".flash__<%= key %>").slideUp();
+    }, 5000)
+  </script>
+  <% if key === 'alert' %>
+    <script>
+    window.onload = function () {
+      $("html,body").animate({scrollTop:$('#return').offset().top});
+    };
+    </script>
+  <% end %>
+<% end %>
