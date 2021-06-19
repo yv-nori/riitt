@@ -9,16 +9,16 @@ export const start = () => {
   noScrollSP();
   setTimeout(function () {
     $($start_logo).fadeIn(1300);
-  }, 0);
+  }, 500);
   // 500
   setTimeout(function () {
     $($start_logo).fadeOut(500);
-  }, 0);
+  }, 2000);
   // 2000
   setTimeout(function () {
     $($start).fadeOut(500);
     onScrollPC();
     onScrollSP();
-  }, 0);
+  }, 3000);
   // 3000
 };
