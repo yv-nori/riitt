@@ -27,17 +27,17 @@
     &.media {
       height: 861vw;
       @include mq-up("tab_after") {
-        height: 308vw;
+        height: 299vw;
       }
     }
     &.print {
-          height: 487vw;
+      height: 487vw;
       @include mq-up("tab_after") {
         height: 180vw;
       }
     }
     &.system {
-          height: 76vw;
+      height: 76vw;
       @include mq-up("tab_after") {
         height: 26vw;
       }
@@ -125,9 +125,9 @@
       width: 40vw;
       height: 40vw;
       @include mq-up("tab_after") {
-        width: 14vw;
-        height: 14vw;
-        top: 50%;
+        width: 15vw;
+        height: 15vw;
+        top: 13%;
         left: 76%;
       }
       .img {
@@ -135,6 +135,10 @@
         border-radius: 100%;
         width: 40vw;
         height: 40vw;
+        @include mq-up("tab_after") {
+          width: 14vw;
+          height: 14vw;
+        }
       }
     }
   }
@@ -195,7 +199,7 @@
     }
     .img-pic {
       width: 30vw;
-      height: 30vw;
+      height: 32vw;
       position: absolute;
       top: 11vw;
       left: 50%;
@@ -207,7 +211,7 @@
         transform: initial;
         margin-top: 4vw;
         width: 24vw;
-        height: 24vw;
+        height: 25vw;
       }
     }
   }

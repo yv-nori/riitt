@@ -53,13 +53,15 @@
 .C_header__open-menu {
   position: relative;
   cursor: default;
-  &:hover .target-ul {
-    opacity: 1;
-    transform: translate(-50%, 100%);
-  }
-  &:hover .target-li{
-    opacity: 1;
-    transform: initial;
+  &.isMoveTop {
+    &:hover .target-ul {
+      opacity: 1;
+      transform: translate(-50%, 100%);
+    }
+    &:hover .target-li{
+      opacity: 1;
+      transform: initial;
+    }
   }
 }
 .C_header__arrow-down {
@@ -456,40 +458,40 @@
   }
   animation: side-menu-open_rewind .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
   .menu_show-list_0 {
-    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) 0.1s forwards;
+    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) forwards;
   }
   .menu_show-list_1 {
-    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) 0.15s forwards;
+    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) forwards;
   }
   .menu_show-list_2 {
-    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) 0.2s forwards;
+    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) forwards;
   }
   .menu_show-list_3 {
-    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) 0.25s forwards;
+    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) forwards;
   }
   .menu_show-list_4 {
-    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) 0.3s forwards;
+    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) forwards;
   }
   .menu_show-list_5 {
-    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) 0.35s forwards;
+    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) forwards;
   }
   .menu_show-list_6 {
-    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) 0.4s forwards;
+    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) forwards;
   }
   .menu_show-list_7 {
-    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) 0.45s forwards;
+    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) forwards;
   }
   .menu_show-list_8 {
-    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) 0.5s forwards;
+    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) forwards;
   }
   .menu_show-list_9 {
-    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) 0.55s forwards;
+    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) forwards;
   }
   .menu_show-list_10 {
-    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) 0.6s forwards;
+    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) forwards;
   }
   .menu_show-list_11 {
-    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) 0.65s forwards;
+    animation: side-menu-list-show_rewind .8s cubic-bezier(.075,.82,.165,1) forwards;
   }
   .border {
     &:first-of-type {
@@ -502,40 +504,40 @@
   &.isActive {
     animation: side-menu-open .8s cubic-bezier(.075,.82,.165,1) 0s forwards;
     .menu_show-list_0 {
-      animation: side-menu-list-show .8s cubic-bezier(.075,.82,.165,1) 0.1s forwards;
+      animation: side-menu-list-show .4s cubic-bezier(.075,.82,.165,1) 0.1s forwards;
     }
     .menu_show-list_1 {
-      animation: side-menu-list-show .8s cubic-bezier(.075,.82,.165,1) 0.15s forwards;
+      animation: side-menu-list-show .4s cubic-bezier(.075,.82,.165,1) 0.15s forwards;
     }
     .menu_show-list_2 {
-      animation: side-menu-list-show .8s cubic-bezier(.075,.82,.165,1) 0.2s forwards;
+      animation: side-menu-list-show .4s cubic-bezier(.075,.82,.165,1) 0.2s forwards;
     }
     .menu_show-list_3 {
-      animation: side-menu-list-show .8s cubic-bezier(.075,.82,.165,1) 0.25s forwards;
+      animation: side-menu-list-show .4s cubic-bezier(.075,.82,.165,1) 0.25s forwards;
     }
     .menu_show-list_4 {
-      animation: side-menu-list-show .8s cubic-bezier(.075,.82,.165,1) 0.3s forwards;
+      animation: side-menu-list-show .4s cubic-bezier(.075,.82,.165,1) 0.3s forwards;
     }
     .menu_show-list_5 {
-      animation: side-menu-list-show .8s cubic-bezier(.075,.82,.165,1) 0.35s forwards;
+      animation: side-menu-list-show .4s cubic-bezier(.075,.82,.165,1) 0.35s forwards;
     }
     .menu_show-list_6 {
-      animation: side-menu-list-show .8s cubic-bezier(.075,.82,.165,1) 0.4s forwards;
+      animation: side-menu-list-show .4s cubic-bezier(.075,.82,.165,1) 0.4s forwards;
     }
     .menu_show-list_7 {
-      animation: side-menu-list-show .8s cubic-bezier(.075,.82,.165,1) 0.45s forwards;
+      animation: side-menu-list-show .4s cubic-bezier(.075,.82,.165,1) 0.45s forwards;
     }
     .menu_show-list_8 {
-      animation: side-menu-list-show .8s cubic-bezier(.075,.82,.165,1) 0.5s forwards;
+      animation: side-menu-list-show .4s cubic-bezier(.075,.82,.165,1) 0.5s forwards;
     }
     .menu_show-list_9 {
-      animation: side-menu-list-show .8s cubic-bezier(.075,.82,.165,1) 0.55s forwards;
+      animation: side-menu-list-show .4s cubic-bezier(.075,.82,.165,1) 0.55s forwards;
     }
     .menu_show-list_10 {
-      animation: side-menu-list-show .8s cubic-bezier(.075,.82,.165,1) 0.6s forwards;
+      animation: side-menu-list-show .4s cubic-bezier(.075,.82,.165,1) 0.6s forwards;
     }
     .menu_show-list_11 {
-      animation: side-menu-list-show .8s cubic-bezier(.075,.82,.165,1) 0.65s forwards;
+      animation: side-menu-list-show .4s cubic-bezier(.075,.82,.165,1) 0.65s forwards;
     }
     .menu-close {
       opacity: 1;
@@ -579,6 +581,6 @@
     transform-origin: 100% 50%; transform: translate(0px, 0px); opacity: 1;
   }
   100% {
-    transform-origin: 100% 50%; transform: translate(50px, 0px); opacity: 0;
+    transform-origin: 100% 50%; transform: translate(0px, 0px); opacity: 0;
   }
 }

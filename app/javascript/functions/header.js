@@ -9,7 +9,7 @@ export const headerItems = () => {
     $trigger:
       _doc.getElementById('JS_menu-open_trigger')
     ,
-    $targets: [],
+    $targets: [_doc.getElementById('JS_scroll-change_target-sub-open')],
     $targets_delay: [],
     Activity: 'isPassive',
     allow: false,

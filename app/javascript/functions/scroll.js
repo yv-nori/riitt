@@ -124,9 +124,15 @@ export const resetPositions = (scrollPositions, $triggers, addStart = 0, addEnd 
   scrollPositions.end = [];
   const length = $triggers.length;
   for (let i = 0; i < length; i++) {
-    scrollPositions.start.push($($triggers[i]).offset().top + addStart);
+    if ($triggers[i].dataset.showheight == 'true') {
+      scrollPositions.start.push($($triggers[i]).offset().top + addStart - ($($triggers[i]).height() * 1.2));
+    } else {
+      scrollPositions.start.push($($triggers[i]).offset().top + addStart);
+    }
     scrollPositions.end.push($($triggers[i]).offset().top + $($triggers[i]).height() + addEnd);
   }
+  console.log(scrollPositions)
+  console.log($triggers)
 }
 // resetSmoothPositions
 export const resetSmoothPositions = (Items) => {
@@ -211,7 +217,7 @@ export const scrollShowItems = () => {
     positions: {
       start: [],
       end: []
-    }
+    },
   }
   getElements('JS_scroll_show_', Items.$targets)
   resetPositions(Items.positions, Items.$targets);

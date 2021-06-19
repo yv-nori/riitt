@@ -13,6 +13,7 @@ import {
 import {
   media
 } from "./utility"
+
 $(function () {
   let windowScrollTop = 0
   const HeaderItems = headerItems();
@@ -22,7 +23,7 @@ $(function () {
   headerPage(HeaderItems.$page_target);
   visit($VisitTargets, $MoveItems, HeaderItems);
   let startPosition = 0;
-  $(window).on('scroll', function () {
+  document.addEventListener('scroll', event => {
     windowScrollTop = $(this).scrollTop();
     scrollMove(windowScrollTop, $MoveItems);
     scrollShow(windowScrollTop, $ScrollShowItems, 100);
@@ -41,8 +42,9 @@ $(function () {
         break;
     };
     startPosition = windowScrollTop;
-  });
+  },{ passive: true });
   window.addEventListener('resize', () => {
     resetPositions($ScrollShowItems.positions, $ScrollShowItems.$targets);
   }, false);
 });
+

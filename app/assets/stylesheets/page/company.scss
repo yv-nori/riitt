@@ -140,7 +140,7 @@
             height: 18vw;
             width: 18vw;
             right: 8vw;
-            top: 4vw;
+            top: 9vw;
           }
           .svg {
             width: 100%;
@@ -167,15 +167,15 @@
         }
         .img {
           position: absolute;
-          right: 14vw;
-          top: 75vw;
-          height: 60vw;
-          width: 60vw;
+          right: 21vw;
+          top: 87vw;
+          height: 45vw;
+          width: 42vw;
           @include mq-up("tab_after") {
-            right: 9vw;
+            right: 10vw;
             top: 7vw;
-            height: 23vw;
-            width: 23vw;
+            height: 18vw;
+            width: 17vw;
           }
         }
       }
