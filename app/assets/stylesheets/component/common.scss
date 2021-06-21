@@ -101,6 +101,7 @@
 // ボタン
 // ================================
 .C_common__button {
+  position: relative;
   margin: 8.53333vw auto 0;
   height: 12.8vw;
   width: 81.86667vw;
@@ -276,12 +277,7 @@
       border-width: .06944vw;
       width: 100%;
     }
-    &:hover .text {
-      color: #fff;
-    }
-    &:hover path {
-      fill: #fff;
-    }
+
   }
   .button {
     border: none;
@@ -299,6 +295,12 @@
     @include mq-up("tab_after") {
       border-width: .06944vw;
       width: 12.5vw;
+    }
+    &:hover .text {
+      color: #fff;
+    }
+    &:hover path {
+      fill: #fff;
     }
     .text {
       position: relative;

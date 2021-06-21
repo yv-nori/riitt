@@ -220,6 +220,7 @@ export const scrollShowItems = () => {
     },
   }
   getElements('JS_scroll_show_', Items.$targets)
+  getElements('JS_scroll_show-work_', Items.$targets)
   resetPositions(Items.positions, Items.$targets);
   return Items;
 }

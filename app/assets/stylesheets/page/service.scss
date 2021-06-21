@@ -120,14 +120,15 @@
     .img-position {
       position: absolute;
       overflow: hidden;
-      top: 10%;
+      top: 13%;
       left: 29%;
       width: 40vw;
       height: 40vw;
+      border-radius: 100%;
       @include mq-up("tab_after") {
         width: 15vw;
         height: 15vw;
-        top: 13%;
+        top: 12%;
         left: 76%;
       }
       .img {
@@ -136,8 +137,8 @@
         width: 40vw;
         height: 40vw;
         @include mq-up("tab_after") {
-          width: 14vw;
-          height: 14vw;
+          width: 15vw;
+          height: 15vw;
         }
       }
     }

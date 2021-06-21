@@ -10,13 +10,14 @@
     padding-right: 8vw;
     padding-top: 10.66667vw;
     margin-top: 5.06667vw;
-    width: 73.33333vw;
+    width: 84vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
     overflow: hidden;
     @include mq-up("tab_after") {
+      width: 73.33333vw;
       border-radius: 0.83333vw;
       padding-bottom: 6.94444vw;
       padding-left: 10.20833vw;
@@ -39,6 +40,7 @@
     }
   }
   .form {
+    width: 100%;
     padding-top: 12vw;
     display: flex;
     flex-direction: column;

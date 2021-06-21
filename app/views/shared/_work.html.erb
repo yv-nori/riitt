@@ -1,0 +1,57 @@
+<%  visit_count = 0 %>
+<% @works.each_with_index do |work, i| %>
+  <% 
+    if work[:visit].blank? then
+      js_id = {
+        text: 'JS_scroll_show-work_',
+        num: ((i - visit_count) * 4)
+      }
+    else
+      js_id = {
+        text: 'JS_visit_',
+        num: (i + work[:visit] + (visit_count * 4))
+      }
+      visit_count += 1
+    end
+  %>
+  <li class='bord A_bord-hide left' id=<%= js_id[:text] + (js_id[:num] + 0).to_s %> data-showHeight='true'>
+      <div class='inner-left hide-inner'>
+      <div class="text-box">
+        <div class='C_common__title_S'>
+          <div class='A_hide'>
+            <h3 class='hide-inner' id=<%= js_id[:text] + (js_id[:num] + 1).to_s %> data-showHeight='true'>
+              <%= work[:category] %>
+            </h3>
+          </div>
+        </div>
+        <div class='C_common__title'>
+          <div class='A_hide'>
+            <h2 class='hide-inner' id=<%= js_id[:text] + (js_id[:num] + 2).to_s %> data-showHeight='true'>
+              <%= work[:title].html_safe %>
+            </h2>
+          </div>
+        </div>
+        <div class='text'>
+          <div class='A_hide'>
+            <p class='hide-inner' id=<%= js_id[:text] + (js_id[:num] + 3).to_s %> data-showHeight='true'>
+            <%= work[:statement] %>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='button-box'>
+        <button class='button A_mask'>
+          <p class='text' data-text='SHOW'>SHOW</p>
+          <%= embedded_svg 'arrow-right.svg', class: 'arrow-left' %>
+          <%= link_to '', work[:link], class:'L_link', target: :_blank %>
+        </button>
+      </div>
+    </div>
+    <div class='inner-right right'>
+      <picture>
+        <source data-srcset='<%= image_url( work[:image] + '.webp') %>' type="image/webp" class="C_image"/>
+        <img src='<%= image_url(work[:image] + '_dummy.webp') %>' data-src='<%= image_url(work[:image] + '_alt.jpg') %>' alt='<%= work[:image_title] %>' class="C_image lazyload"/>
+      </picture>
+    </div>
+  </li>
+<% end %>

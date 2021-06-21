@@ -27,12 +27,29 @@
   justify-content: flex-end;
 }
 .L_ver-space {
-    padding-bottom: $space-vertical-wrap;
-    padding-top: $space-vertical-wrap_L;
+  padding-bottom: $space-vertical-wrap;
+  padding-top: $space-vertical-wrap_L;
 }
 .L_back-color {
   background-color: $color-background2;
 }
 .L_center {
   margin: 0 auto;
+}
+.L_link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.L_temp {
+  font-size:4vw;
+  position:absolute;
+  bottom: 3%;
+  right: 6%;
+  @include mq-up("tab_after") {
+    font-size:1vw;
+  }
 }

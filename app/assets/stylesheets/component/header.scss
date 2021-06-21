@@ -17,7 +17,7 @@
   @include mq-up("tab_after") {
     left: $space-side;
     top: 3.5vw;
-    width: 4vw;
+    width: 3vw;
   }
   svg {
     width: 100%;
@@ -354,6 +354,7 @@
       display: inline-block;
       color: #fff;
       background-image: -webkit-linear-gradient(left,#fff 50%,$color-mask 0);
+      font-family: 'honoka-maru';
       @include mq-up("tab_after") {
         font-size: 3.11111vh;
         margin-left: 4.44444vh;

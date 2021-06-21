@@ -1,7 +1,7 @@
 .P_index__kv {
   width: 90vw;
   position: absolute;
-  top: $header-height_pc;
+  top: 18vw;
   right: $space-side;
   z-index: map-get($layer, 'back-image');
   @include mq-up("tab_after") {
@@ -142,7 +142,7 @@
   }
   .local-text {
     top: 62.8%;
-    left: 10.1%;
+    left: 9.5%;
     @include mq-up("tab_after") {
       top: 56.8%;
       left: 25.3%;

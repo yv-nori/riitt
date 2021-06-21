@@ -1,10 +1,38 @@
 class RiittController < ApplicationController
   def index
+    @works = [
+      Work::Nanairo,
+      Work::Dokyoji,
+      Work::Yuka
+    ]
   end
   def contact
     @contact = Contact.new
     form_items
     error_array(@form_items, @contact)
+  end
+
+  def works
+    @works = [
+      Work::Nanairo_visit,
+      Work::Parti,
+      Work::Piani,
+      Work::Dokyoji,
+      Work::Yuka
+    ]
+  end
+  def web
+    @works = [
+      Work::Nanairo,
+      Work::Parti,
+      Work::Piani,
+      Work::Dokyoji
+    ]
+  end
+  def media
+    @works = [
+      Work::Yuka
+    ]
   end
 
   def contact_send
@@ -20,6 +48,7 @@ class RiittController < ApplicationController
       render :contact
     end
   end
+
   def form_items
     @form_items = {
       url: contact_send_path,

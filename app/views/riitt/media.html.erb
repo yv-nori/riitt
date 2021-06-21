@@ -293,47 +293,7 @@
               </div>
             </div>
             <ul class='C_common__contents-bords'>
-              <li class='bord A_bord-hide left' id='JS_scroll_show_24' data-showHeight='true'>
-                  <div class='inner-left hide-inner'>
-                  <div class="text-box">
-                    <div class='C_common__title_S'>
-                      <div class='A_hide'>
-                        <h3 class='hide-inner' id='JS_scroll_show_25' data-showHeight='true'>
-                          Movie
-                        </h3>
-                      </div>
-                    </div>
-                    <div class='C_common__title'>
-                      <div class='A_hide'>
-                        <h2 class='hide-inner' id='JS_scroll_show_26' data-showHeight='true'>
-                          YouTuber Yuka Sugihara
-                        </h2>
-                      </div>
-                    </div>
-                    <div class='text'>
-                      <div class='A_hide'>
-                        <p class='hide-inner' id='JS_scroll_show_27' data-showHeight='true'>
-                          歌手として活動しているYouTuberのYuka-Sugiharaの動画を製作いたしました。
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='button-box'>
-                    <%= link_to 'https://m.youtube.com/watch?v=VGiUxCXFWcs&feature=youtu.be', target: :_blank do %>
-                      <button class='button A_mask'>
-                          <p class='text' data-text='SHOW'>SHOW</p>
-                          <%= embedded_svg 'arrow-right.svg', class: 'arrow-left' %>
-                      </button>
-                    <% end %>
-                  </div>
-                </div>
-                <div class='inner-right right'>
-                  <picture>
-                    <source data-srcset='<%= image_url('product_media_yuka.webp') %>' type="image/webp" class="C_image"/>
-                    <img src='<%= image_url('product_media_yuka_dummy.webp') %>' data-src='<%= image_url('product_media_yuka_alt.jpg') %>' alt="nanairoバナー" class="C_image lazyload"/>
-                  </picture>
-                </div>
-              </li>
+              <%= render partial: 'shared/work' %>
             </ul>
           </div>
         </div>

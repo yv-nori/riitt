@@ -378,6 +378,7 @@
       .logo {
         height: 12.29067vw;
         width: 48vw;
+        position: relative;
         @include mq-up("tab_after") {
           height: 3.51111vw;
           width: 13.71111vw;
