@@ -8,8 +8,8 @@ export const start = () => {
   const $movie = _doc.getElementById('JS_movie');
   noScrollPC();
   noScrollSP();
-  $movie.load()
-  // $movie.pause()
+  $movie.load();
+  $movie.pause();
   setTimeout(function () {
     $($start_logo).fadeIn(1300);
   }, 500);
@@ -20,7 +20,7 @@ export const start = () => {
   // 2000
   setTimeout(function () {
     $($start).fadeOut(500);
-    // $movie.play()
+    $movie.play()
     onScrollPC();
     onScrollSP();
   }, 3000);
