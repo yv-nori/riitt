@@ -59,10 +59,15 @@
   </div>
   <%= render partial: 'shared/header' %>
   <div class='P_index__kv'>
-    <picture>
-      <source data-srcset='<%= image_url('index-top.webp') %>' type="image/webp" class="C_image top"/>
-      <img src='<%= image_url('index-top_dummy.webp') %>' data-src='<%= image_url('index-top_alt.png') %>' alt="riittトップ画像" class="C_image top lazyload"/>
-    </picture>
+    <%= video_tag 'intro_movie.mp4', autoplay: true, muted: true, playsinline: true, loop: true, class: 'video', id: 'JS_movie' %>
+    <div class='mask'>
+      <%= embedded_svg 'movie_mask.svg'%>
+    </div>
+    <div class='mask'></div>
+    <%#   <picture>
+    //   <source data-srcset='<%= image_url('index-top.webp') %><%#' type="image/webp" class="C_image top"/>
+    //   <img src='<%= image_url('index-top_dummy.webp') %><%#' data-src='<%= image_url('index-top_alt.png') %><%#' alt="riittトップ画像" class="C_image top lazyload"/> %>
+    // </picture>
   </div>
   <section class='P_index__catch-copy'>
     <div class='C_common__catch'>
