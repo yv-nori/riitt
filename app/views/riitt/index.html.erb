@@ -59,7 +59,9 @@
   </div>
   <%= render partial: 'shared/header' %>
   <div class='P_index__kv'>
-    <%= video_tag 'intro_movie.mp4',type: 'video/mp4', autoplay: true, muted: true, playsinline: true, loop: true, class: 'video', id: 'JS_movie' %>
+    <video src="/videos/intro_movie.mp4"
+          type='video/mp4' autoplay muted loop playsinline class='video' id='JS_movie'>
+    </video>
     <div class='mask'>
       <%= embedded_svg 'movie_mask.svg'%>
     </div>
