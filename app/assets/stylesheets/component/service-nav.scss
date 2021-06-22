@@ -133,6 +133,10 @@
     }
     .btn-text {
       font-size: 3.5vw;
+      @include mq-up("tab_after") {
+        font-size: 1.3vw;
+            padding-bottom: 0.08vw;
+      }
     }
     .icon {
       &.web {
@@ -141,7 +145,7 @@
         padding-top: 2vw;
         @include mq-up("tab_after") {
           height: initial;
-          width: 2.5vw;
+          width: 2.2vw;
           padding-top: 0.5vw;
         }
       }
@@ -151,7 +155,7 @@
         padding-top: 1.8vw;
         @include mq-up("tab_after") {
           height: initial;
-          width: 2.6vw;
+          width: 2vw;
           padding-top: 0.4vw;
         }
       }
@@ -162,7 +166,7 @@
         margin-left: 5vw;
         @include mq-up("tab_after") {
           height: initial;
-          width: 1.6vw;
+          width: 1.1vw;
           padding-top: 0.4vw;
           margin-left: 2vw;
         }
@@ -172,7 +176,7 @@
         height: 5vw;
         padding-top: 2vw;
         @include mq-up("tab_after") {
-          width: 2.5vw;
+          width: 2.2vw;
           padding-top: 0.5vw;
         }
       }
