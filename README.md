@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+アプリケーション名
 
-Things you may want to cover:
+* Riittのホームページ
 
-* Ruby version
+アプリケーション概要
 
-* System dependencies
+* Riittについての会社情報を発信する
 
-* Configuration
+URL
+* https://riitt.net
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+実装機能
+* 情報の閲覧
+* お問い合わせメール送信
