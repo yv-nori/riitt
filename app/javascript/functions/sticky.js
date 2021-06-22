@@ -10,7 +10,6 @@ $(function () {
   });
   window.addEventListener('resize', () => {
     resetPositions(StickyItems.scrollPositions, StickyItems.$trigger);
-    console.log(StickyItems)
   }, false);
 });
 

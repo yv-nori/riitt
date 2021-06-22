@@ -30,14 +30,12 @@ export const headerItems = () => {
 }
 export const headerPage = Items => {
   let CurrentPath = location.pathname;
-  console.log(CurrentPath.indexOf('/'))
   let myPath = CurrentPath.slice(CurrentPath.indexOf('/') + 1);
   $(Items).addClass(myPath + '_Now');
 }
 export const headerChangeDelay = (windowScrollTop, startPosition, Items, toTop = true) => {
   let length = Items.$targets.length;
   let length_delay = Items.$targets_delay.length;
-  console.log(Items.$targets)
   const delayTop = () => {
     for (let i = 0; i < length_delay; i++) {
       if (toTop) {

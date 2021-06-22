@@ -31,6 +31,5 @@ export const checkItems = () => {
     $email: _doc.getElementById('email'),
     $email_confimation: _doc.getElementById('email_cofirmation'),
   }
-  console.log(Items)
   return Items;
 }

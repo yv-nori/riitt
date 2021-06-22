@@ -131,8 +131,6 @@ export const resetPositions = (scrollPositions, $triggers, addStart = 0, addEnd 
     }
     scrollPositions.end.push($($triggers[i]).offset().top + $($triggers[i]).height() + addEnd);
   }
-  console.log(scrollPositions)
-  console.log($triggers)
 }
 // resetSmoothPositions
 export const resetSmoothPositions = (Items) => {
