@@ -17,7 +17,10 @@
   <body id='JS_page'>
     <div class="A_start" id='JS_start'>
       <div id='JS_start_logo' class='logo'>
-        <%= embedded_svg 'logo.svg', alt: 'riitt'%>
+        <picture>
+          <source data-srcset='<%= image_url('logo.webp') %>' type="image/webp" class="C_image adjust-top1"/>
+          <img src='<%= image_url('logo_dummy.png') %>' data-src='<%= image_url('logo_alt.png') %>' alt="riitt_logo" class="C_image adjust-top1 lazyload"/>
+        </picture>
       </div>
     </div>
     <%= yield %>
