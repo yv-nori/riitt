@@ -17,6 +17,9 @@ $(function () {
 });
 // ページ関数
 let CurrentPath = location.pathname;
+if (CurrentPath == '/') {
+  require("../functions/movie");
+}
 if (CurrentPath == '/' ||
   CurrentPath == '/company' ||
   CurrentPath == '/service-web' ||
@@ -29,6 +32,7 @@ if (CurrentPath == '/' ||
   CurrentPath == '/contact') {
   require("../functions/base");
 }
+
 if (CurrentPath == '/service-web' ||
   CurrentPath == '/service-media' ||
   CurrentPath == '/service-print' ||
