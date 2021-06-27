@@ -3,7 +3,7 @@ class Work
     category: 'Web Site',
     title: '社会福祉法人 七彩学舎',
     statement: '認定こども園、パルティ道教寺・ピアニィ道教寺を運営する社会福祉法人の「好きが見つかる、未来を育む」というコンセプトのもと法人が目指すビジョンを発信できるように製作いたしました。',
-    link: 'https://www.dokyoji.or.jp',
+    link: 'https://https://nanairo-dokyoji.herokuapp.com',
     image: 'product_web_nanairo',
     image_title: '七彩学舎バナー'
   }
@@ -11,7 +11,7 @@ class Work
     category: 'Web Site',
     title: '社会福祉法人 七彩学舎',
     statement: '認定こども園、パルティ道教寺・ピアニィ道教寺を運営する社会福祉法人の「好きが見つかる、未来を育む」というコンセプトのもと法人が目指すビジョンを発信できるように製作いたしました。',
-    link: 'https://www.dokyoji.or.jp',
+    link: 'https://https://nanairo-dokyoji.herokuapp.com',
     image: 'product_web_nanairo',
     image_title: '七彩学舎バナー',
     visit: 2
@@ -20,7 +20,7 @@ class Work
     category: 'Web Site',
     title: '認定こども園<br class="sp_only"><span class="tab_after">　</span>パルティ道教寺',
     statement: '認定こども園パルティ道教寺のホームページを製作いたしました。子どもの明るく楽しい未来がイメージしやすいように、製作いたしました。',
-    link: 'https://www.dokyoji.or.jp/parti',
+    link: 'https://https://nanairo-dokyoji.herokuapp.com/parti',
     image: 'product_web_parti',
     image_title: 'パルティ道教寺バナー'
   }
@@ -28,7 +28,7 @@ class Work
     category: 'Web Site',
     title: '認定こども園<br class="sp_only"><span class="tab_after">　</span>ピアニィ道教寺',
     statement: '認定こども園パルティ道教寺のホームページを製作いたしました。子どもの明るく楽しい未来がイメージしやすいように、製作いたしました。',
-    link: 'https://www.dokyoji.or.jp/piani',
+    link: 'https://https://nanairo-dokyoji.herokuapp.com/piani',
     image: 'product_web_piani',
     image_title: 'ピアニィ道教寺バナー'
   }
