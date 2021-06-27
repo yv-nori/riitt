@@ -125,6 +125,7 @@
       width: 40vw;
       height: 40vw;
       border-radius: 100%;
+      z-index: 1;
       @include mq-up("tab_after") {
         width: 15vw;
         height: 15vw;
