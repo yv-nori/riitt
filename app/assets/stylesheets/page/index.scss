@@ -6,6 +6,9 @@
   right: $space-side;
   overflow: hidden;
   z-index: map-get($layer, 'back-image');
+  .C_image {
+    height: 100%;
+  }
   @include mq-up("tab_after") {
     top: 8vw;
     width: 40vw;
