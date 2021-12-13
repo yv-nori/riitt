@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+  
   <title><%= content_for?(:title) ? yield(:title) : "Riitt株式会社 – WEB開発・動画撮影・ロゴ・ポスター製作で、思いつきをカタチに。"%></title>
     <meta name="keywords" content="IT,ホームページ,Web製作,貝塚市,大阪府,関西,動画編集,HP">
     <meta name='description' content='<%= content_for?(:description) ? yield(:description) : 'Riitt株式会社では、ウェブ製作や動画撮影・編集などを主な業務とし、地域へのプログラミング教育の実践に取り組み、ITを通して地域から未来を育んでいきたいと考えます。'%>'>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <%= csp_meta_tag  %>
+    
     <meta nam>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">

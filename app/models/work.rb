@@ -36,7 +36,7 @@ class Work
     category: 'Web Site',
     title: '宗教法人 道教寺',
     statement: 'お寺の伝統を踏襲しながら、地域に開かれた、親しみやすいお寺をイメージしながら、製作しました。',
-    link: 'https://www.otera-dokyoji.or.jp',
+    link: 'https://www.dokyoji.com/',
     image: 'product_web_dokyoji',
     image_title: '宗教法人道教寺バナー'
   }
