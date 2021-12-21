@@ -40,7 +40,8 @@ if (CurrentPath == '/service-web' ||
   CurrentPath == '/works') {
   require("../functions/sticky");
 }
-if (CurrentPath == '/contact') {
+if (CurrentPath == '/contact' ||
+CurrentPath == '/contact_send') {
   require("../functions/form-check");
 }
 

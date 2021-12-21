@@ -150,6 +150,7 @@
       border-radius: 0.41667vw;
       margin-top: 0;
       width: 35vw;
+      font-size: 1.25vw;
     }
   }
   .submit {
@@ -192,5 +193,9 @@
     margin-top: 5vw;
     text-align: center;
     color: #e56910;
+  }
+  .recaptcha {
+    display: flex;
+    justify-content: end;
   }
 }

@@ -37,7 +37,7 @@ class RiittController < ApplicationController
 
   def contact_send
     @contact = Contact.new(contact_params)
-    if @contact.valid?
+    if @contact.valid? && verify_recaptcha
       redirect_to contact_path, notice: "送信が完了しました。"
       ContactMailer.contact_mail(@contact).deliver_now
       ContactMailer.contact_mail_auto_reserve(@contact).deliver_now

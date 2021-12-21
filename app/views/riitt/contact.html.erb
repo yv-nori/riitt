@@ -60,7 +60,9 @@ Riitt株式会社では、Web製作動画撮影・編集、プログラム教育
           <% end %>
         </div>
       <% end %>
-      <%# ENTRY %>
+      <div class="recaptcha">
+        <%= recaptcha_tags %>
+      </div>
       <p class='errors' id='JS_form-check_err'></p>
       <%= f.submit "送信", class:"submit", id:'submit' %>
       <%# /下部ボタン %>
